@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "allowJs": false,
+        "jsx": "react",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "preserveConstEnums": true,
+        "removeComments": true,
+        "sourceMap": false,
+        "target": "es5",
+        "resolveJsonModule": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "typeRoots": [  "./types", "./node_modules/@types"],
+        "lib": [ "es2015", "dom" ]
+    },
+    "exclude": ["node_modules", "typings"],
+    "include": [
+        "./src/**/**/*"
+    ]
+}
