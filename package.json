@@ -1,5 +1,5 @@
 {
-  "name": "react-typeScript-template",
+  "name": "project-name",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,9 +16,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vannizhang/React-TypeScript-App-Template/issues"
+    "url": "https://github.com/vannizhang/{project-name}/issues"
   },
-  "homepage": "https://github.com/vannizhang/React-TypeScript-App-Template#readme",
+  "homepage": "https://github.com/vannizhang/{project-name}#readme",
   "devDependencies": {
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
