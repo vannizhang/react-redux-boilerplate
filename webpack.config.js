@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssets = require('optimize-css-assets-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports =  (env, options)=> {
 
@@ -91,7 +92,8 @@ module.exports =  (env, options)=> {
                     removeStyleLinkTypeAttributese : true,
                     useShortDoctype                : true
                 }
-            })
+            }),
+            new CleanWebpackPlugin()
         ],
         optimization: {
             splitChunks: {
