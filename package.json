@@ -44,9 +44,15 @@
   },
   "dependencies": {
     "@types/arcgis-js-api": "^4.15.0",
+    "@types/shortid": "0.0.29",
+    "@types/styled-components": "^5.1.0",
+    "axios": "^0.19.2",
     "calcite-web": "github:Esri/calcite-web#v1.2.5",
+    "classnames": "^2.2.6",
     "esri-loader": "^2.14.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "shortid": "^2.2.15",
+    "styled-components": "^5.1.0"
   }
 }
