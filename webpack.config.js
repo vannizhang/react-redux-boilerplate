@@ -24,7 +24,7 @@ module.exports =  (env, options)=> {
             rules: [
                 {
                     test: /\.(ts|tsx)$/,
-                    loader: 'ts-loader'
+                    loader: 'babel-loader'
                 },
                 {
                     test: /\.s?[ac]ss$/,
