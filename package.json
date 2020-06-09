@@ -52,6 +52,7 @@
     "typescript": "^3.8.3",
     "url-loader": "^3.0.0",
     "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.8.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },
