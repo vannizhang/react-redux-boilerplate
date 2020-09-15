@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import { loadModules, loadCss } from 'esri-loader';
 import IMapView from 'esri/views/MapView';
