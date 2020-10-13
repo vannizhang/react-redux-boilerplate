@@ -3,12 +3,7 @@ import React, {
     createContext
 } from 'react';
 
-import {
-    miscFns
-} from 'helper-toolkit-ts';
-
 type AppContextProps = {
-    isMobile: boolean;
 }
 
 type AppContextProviderProps = {
@@ -24,11 +19,7 @@ const AppContextProvider:React.FC<AppContextProviderProps> = ({
     const [ contextProps, setContextProps ] = useState<AppContextProps>();
 
     const init = async()=>{
-
-        const values:AppContextProps = {
-            isMobile: miscFns.isMobileDevice()
-        };
-
+        const values:AppContextProps = {};
         setContextProps(values);
     }
 
