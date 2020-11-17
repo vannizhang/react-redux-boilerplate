@@ -10,6 +10,14 @@ import AppContextProvider from './contexts/AppContextProvider';
 
 import { setDefaultOptions } from 'esri-loader';
 
+import {
+    MapView
+} from './components';
+
+import {
+    WEB_MAP_ID
+} from './constants/map'
+
 setDefaultOptions({
     url: 'https://js.arcgis.com/next/',
 });
@@ -20,7 +28,9 @@ setDefaultOptions({
     ReactDOM.render(
         <ReduxProvider store={configureAppStore(preloadedState)}>
             <AppContextProvider>
-                <h5>hello world</h5>
+                <MapView 
+                    webmapId={WEB_MAP_ID}
+                />
             </AppContextProvider>
         </ReduxProvider>,
         document.getElementById('root')

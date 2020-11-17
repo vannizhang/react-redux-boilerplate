@@ -56,11 +56,15 @@ const MapView: React.FC<Props> = ({ webmapId, children }) => {
                 }}
                 ref={mapDivRef}
             ></div>
-            {React.Children.map(children, (child) => {
-                return React.cloneElement(child as React.ReactElement<any>, {
-                    mapView,
-                });
-            })}
+            {
+                mapView ? (
+                    React.Children.map(children, (child) => {
+                        return React.cloneElement(child as React.ReactElement<any>, {
+                            mapView,
+                        });
+                    }) 
+                ): null
+            }
         </>
     );
 };
