@@ -2,30 +2,22 @@ import React from 'react';
 
 import { loadModules, loadCss } from 'esri-loader';
 import IMapView from 'esri/views/MapView';
-import IWebMap from "esri/WebMap";
+import IWebMap from 'esri/WebMap';
 
 interface Props {
     webmapId: string;
-};
+}
 
-const MapView:React.FC<Props> = ({
-    webmapId,
-    children
-})=>{
-
+const MapView: React.FC<Props> = ({ webmapId, children }) => {
     const mapDivRef = React.useRef<HTMLDivElement>();
 
-    const [ mapView, setMapView] = React.useState<IMapView>(null);
+    const [mapView, setMapView] = React.useState<IMapView>(null);
 
-    const initMapView = async()=>{
-        
+    const initMapView = async () => {
         type Modules = [typeof IMapView, typeof IWebMap];
 
         try {
-            const [ 
-                MapView, 
-                WebMap 
-            ] = await (loadModules([
+            const [MapView, WebMap] = await (loadModules([
                 'esri/views/MapView',
                 'esri/WebMap',
             ]) as Promise<Modules>);
@@ -34,28 +26,27 @@ const MapView:React.FC<Props> = ({
                 container: mapDivRef.current,
                 map: new WebMap({
                     portalItem: {
-                        id: webmapId
-                    }  
+                        id: webmapId,
+                    },
                 }),
             });
 
-            view.when(()=>{
+            view.when(() => {
                 setMapView(view);
             });
-
-        } catch(err){   
+        } catch (err) {
             console.error(err);
         }
     };
 
-    React.useEffect(()=>{
+    React.useEffect(() => {
         loadCss();
         initMapView();
     }, []);
 
     return (
         <>
-            <div 
+            <div
                 style={{
                     position: 'absolute',
                     top: 0,
@@ -65,13 +56,11 @@ const MapView:React.FC<Props> = ({
                 }}
                 ref={mapDivRef}
             ></div>
-            { 
-                React.Children.map(children, (child)=>{
-                    return React.cloneElement(child as React.ReactElement<any>, {
-                        mapView,
-                    });
-                }) 
-            }
+            {React.Children.map(children, (child) => {
+                return React.cloneElement(child as React.ReactElement<any>, {
+                    mapView,
+                });
+            })}
         </>
     );
 };

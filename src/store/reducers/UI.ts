@@ -1,15 +1,10 @@
-  
 import {
     createSlice,
     createSelector,
     // createAsyncThunk
 } from '@reduxjs/toolkit';
 
-import { 
-    RootState, 
-    StoreDispatch, 
-    StoreGetState 
-} from '../configureStore';
+import { RootState, StoreDispatch, StoreGetState } from '../configureStore';
 
 export type UIState = {
     isTopNavVisible: boolean;
@@ -26,14 +21,12 @@ const slice = createSlice({
         isTopNavVisibleToggled: (state) => {
             state.isTopNavVisible = !state.isTopNavVisible;
         },
-    }
+    },
 });
 
 const { reducer } = slice;
 
-export const {
-    isTopNavVisibleToggled
-} = slice.actions;
+export const { isTopNavVisibleToggled } = slice.actions;
 
 export const getIsTopNavVisible = createSelector(
     (state: RootState) => state.UI.isTopNavVisible,

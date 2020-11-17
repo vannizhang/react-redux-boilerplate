@@ -1,21 +1,16 @@
-import {
-    PartialRootState
-} from './configureStore';
+import { PartialRootState } from './configureStore';
 
-import { 
-    initialUIState, 
-    UIState 
-} from '../store/reducers/UI';
+import { initialUIState, UIState } from '../store/reducers/UI';
 
-const getPreloadedUIState = ():UIState=>{
+const getPreloadedUIState = (): UIState => {
     return {
-        ...initialUIState
+        ...initialUIState,
     };
 };
 
-const getPreloadedState = ():PartialRootState=>{
+const getPreloadedState = (): PartialRootState => {
     return {
-        UI: getPreloadedUIState()
+        UI: getPreloadedUIState(),
     };
 };
 

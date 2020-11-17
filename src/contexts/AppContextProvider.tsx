@@ -1,10 +1,6 @@
-import React, {
-    useState,
-    createContext
-} from 'react';
+import React, { useState, createContext } from 'react';
 
-type AppContextProps = {
-}
+type AppContextProps = {};
 
 type AppContextProviderProps = {
     // children: React.ReactNode;
@@ -12,24 +8,23 @@ type AppContextProviderProps = {
 
 export const AppContext = createContext<AppContextProps>(null);
 
-const AppContextProvider:React.FC<AppContextProviderProps> = ({ 
-    children
-})=>{
+const AppContextProvider: React.FC<AppContextProviderProps> = ({
+    children,
+}) => {
+    const [contextProps, setContextProps] = useState<AppContextProps>();
 
-    const [ contextProps, setContextProps ] = useState<AppContextProps>();
-
-    const init = async()=>{
-        const values:AppContextProps = {};
+    const init = async () => {
+        const values: AppContextProps = {};
         setContextProps(values);
-    }
+    };
 
-    React.useEffect(()=>{
+    React.useEffect(() => {
         init();
     }, []);
 
     return (
         <AppContext.Provider value={contextProps}>
-            { contextProps ? children : null }
+            {contextProps ? children : null}
         </AppContext.Provider>
     );
 };
