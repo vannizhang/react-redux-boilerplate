@@ -79,6 +79,7 @@ module.exports =  (env, options)=> {
             new HtmlWebpackPlugin({
                 template: './src/index.template.html',
                 filename: 'index.html',
+                title: 'FooBar',
                 minify: {
                     html5                          : true,
                     collapseWhitespace             : true,
