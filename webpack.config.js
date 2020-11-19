@@ -1,4 +1,5 @@
 const path = require('path');
+const package = require('./package.json');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require('terser-webpack-plugin');
@@ -79,7 +80,15 @@ module.exports =  (env, options)=> {
             new HtmlWebpackPlugin({
                 template: './src/index.template.html',
                 filename: 'index.html',
-                title: 'FooBar',
+                title: package.name,
+                meta: {
+                    title: package.name,
+                    description: package.description,
+                    author: package.author,
+                    keywords: Array.isArray(package.keywords) 
+                        ? package.keywords.join(',') 
+                        : undefined
+                },
                 minify: {
                     html5                          : true,
                     collapseWhitespace             : true,
@@ -95,9 +104,9 @@ module.exports =  (env, options)=> {
                     useShortDoctype                : true
                 }
             }),
-            new CleanWebpackPlugin(),
-            new BundleAnalyzerPlugin()
-        ],
+            !devMode ? new CleanWebpackPlugin() : false,
+            !devMode ? new BundleAnalyzerPlugin() : false
+        ].filter(Boolean),
         optimization: {
             splitChunks: {
                 cacheGroups: {
