@@ -6,9 +6,10 @@ import IWebMap from 'esri/WebMap';
 
 interface Props {
     webmapId: string;
+    children?: React.ReactNode;
 }
 
-const MapView: React.FC<Props> = ({ webmapId, children }) => {
+const MapView: React.FC<Props> = ({ webmapId, children }: Props) => {
     const mapDivRef = React.useRef<HTMLDivElement>();
 
     const [mapView, setMapView] = React.useState<IMapView>(null);
@@ -56,15 +57,16 @@ const MapView: React.FC<Props> = ({ webmapId, children }) => {
                 }}
                 ref={mapDivRef}
             ></div>
-            {
-                mapView ? (
-                    React.Children.map(children, (child) => {
-                        return React.cloneElement(child as React.ReactElement<any>, {
-                            mapView,
-                        });
-                    }) 
-                ): null
-            }
+            {mapView
+                ? React.Children.map(children, (child) => {
+                      return React.cloneElement(
+                          child as React.ReactElement<any>,
+                          {
+                              mapView,
+                          }
+                      );
+                  })
+                : null}
         </>
     );
 };

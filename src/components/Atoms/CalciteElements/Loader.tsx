@@ -1,18 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-const Loader:React.FC<{
+type Props = {
     message?: string;
-}> = ({
-    message
-}) => {
+};
+
+const Loader: React.FC<Props> = ({ message }: Props) => {
     return (
         <div className="loader is-active">
             <div className="loader-bars"></div>
-            {
-                message && <div className="loader-text">{message}</div>
-            }
+            {message && <div className="loader-text">{message}</div>}
         </div>
-    )
-}
+    );
+};
 
 export default Loader;

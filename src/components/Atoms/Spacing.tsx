@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 type Props = {
     paddingTop?: number | string;
@@ -9,9 +9,10 @@ type Props = {
     marginBottom?: number | string;
     marginLeft?: number | string;
     marginRight?: number | string;
-}
+    children?: React.ReactNode;
+};
 
-const Spacing:React.FC<Props> = ({
+const Spacing: React.FC<Props> = ({
     paddingTop,
     paddingBottom,
     paddingLeft,
@@ -20,8 +21,8 @@ const Spacing:React.FC<Props> = ({
     marginBottom,
     marginLeft,
     marginRight,
-    children
-}) => {
+    children,
+}: Props) => {
     return (
         <div
             style={{
@@ -35,9 +36,9 @@ const Spacing:React.FC<Props> = ({
                 marginRight: marginRight || 'unset',
             }}
         >
-            { children }
+            {children}
         </div>
-    )
-}
+    );
+};
 
-export default Spacing
+export default Spacing;

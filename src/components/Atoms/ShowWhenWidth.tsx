@@ -1,36 +1,31 @@
-import React, {
-    useState,
-    useEffect
-} from 'react';
+import React, { useState, useEffect } from 'react';
 
 import useWindowSize from '../../hooks/useWindowSize';
 
-const ShowWhenWidth:React.FC<{
+type Props = {
     lessThan?: number;
     greaterThan?: number;
-}> = ({
-    lessThan=Number.POSITIVE_INFINITY,
-    greaterThan=0,
-    children
-}) => {
+    children?: React.ReactNode;
+};
 
+const ShowWhenWidth: React.FC<Props> = ({
+    lessThan = Number.POSITIVE_INFINITY,
+    greaterThan = 0,
+    children,
+}: Props) => {
     const windowSize = useWindowSize();
 
-    const [ shouldShow, setShouldShow ] = useState<boolean>(true);
+    const [shouldShow, setShouldShow] = useState<boolean>(true);
 
     useEffect(() => {
-
-        let newVal = windowSize.innerWidth >= greaterThan && windowSize.innerWidth <= lessThan;
+        const newVal =
+            windowSize.innerWidth >= greaterThan &&
+            windowSize.innerWidth <= lessThan;
 
         setShouldShow(newVal);
+    }, [windowSize]);
 
-    }, [ windowSize ]);
+    return shouldShow ? <>{children}</> : null;
+};
 
-    return shouldShow ? (
-        <>
-            { children }
-        </>
-    ) : null;
-}
-
-export default ShowWhenWidth
+export default ShowWhenWidth;

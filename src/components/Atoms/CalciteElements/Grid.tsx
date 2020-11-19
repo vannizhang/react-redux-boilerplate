@@ -8,36 +8,32 @@ type Props = {
     // num of columns for phone view
     phoneColumn?: number;
     centerColumn?: boolean;
-}
+    children?: React.ReactNode;
+};
 
-const CalciteGrid:React.FC<Props> = ({
+const CalciteGrid: React.FC<Props> = ({
     column,
     tabletColumn,
     phoneColumn,
     centerColumn,
-    children
-}) => {
-
-    const getColumnClassNames = ()=>{
-        const classNames:string[] = [
+    children,
+}: Props) => {
+    const getColumnClassNames = () => {
+        const classNames: string[] = [
             `column-${column}`,
             tabletColumn ? `tablet-column-${tabletColumn}` : '',
             phoneColumn ? `phone-column-${phoneColumn}` : '',
-            centerColumn ? 'center-column' : ''
-        ].filter(val=>val);
+            centerColumn ? 'center-column' : '',
+        ].filter((val) => val);
 
         return classNames.join(' ');
-    }
+    };
 
     return (
-        <div
-            className='grid-container'
-        >
-            <div className={getColumnClassNames()}>
-                { children }
-            </div>
+        <div className="grid-container">
+            <div className={getColumnClassNames()}>{children}</div>
         </div>
-    )
-}
+    );
+};
 
-export default CalciteGrid
+export default CalciteGrid;

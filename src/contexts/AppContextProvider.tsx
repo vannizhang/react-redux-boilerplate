@@ -1,21 +1,27 @@
 import React, { useState, createContext } from 'react';
 
-type AppContextProps = {};
-
-type AppContextProviderProps = {
-    // children: React.ReactNode;
+type AppContextValue = {
+    darkMode: boolean;
 };
 
-export const AppContext = createContext<AppContextProps>(null);
+type AppContextProviderProps = {
+    children?: React.ReactNode;
+};
+
+export const AppContext = createContext<AppContextValue>(null);
 
 const AppContextProvider: React.FC<AppContextProviderProps> = ({
     children,
-}) => {
-    const [contextProps, setContextProps] = useState<AppContextProps>();
+}: AppContextProviderProps) => {
+    const [value, setValue] = useState<AppContextValue>({
+        darkMode: false,
+    });
 
     const init = async () => {
-        const values: AppContextProps = {};
-        setContextProps(values);
+        // const contextValue: AppContextValue = {
+        //     darkMode: false
+        // };
+        // setValue(contextValue);
     };
 
     React.useEffect(() => {
@@ -23,8 +29,8 @@ const AppContextProvider: React.FC<AppContextProviderProps> = ({
     }, []);
 
     return (
-        <AppContext.Provider value={contextProps}>
-            {contextProps ? children : null}
+        <AppContext.Provider value={value}>
+            {value ? children : null}
         </AppContext.Provider>
     );
 };
