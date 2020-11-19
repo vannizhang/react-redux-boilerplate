@@ -7,30 +7,30 @@ import {
 import { RootState, StoreDispatch, StoreGetState } from '../configureStore';
 
 export type UIState = {
-    isTopNavVisible: boolean;
+    fullscreenMap: boolean;
 };
 
 export const initialUIState = {
-    isTopNavVisible: false,
+    fullscreenMap: false,
 } as UIState;
 
 const slice = createSlice({
     name: 'UI',
     initialState: initialUIState,
     reducers: {
-        isTopNavVisibleToggled: (state) => {
-            state.isTopNavVisible = !state.isTopNavVisible;
+        isFullscreenMapToggled: (state) => {
+            state.fullscreenMap = !state.fullscreenMap;
         },
     },
 });
 
 const { reducer } = slice;
 
-export const { isTopNavVisibleToggled } = slice.actions;
+export const { isFullscreenMapToggled } = slice.actions;
 
-export const getIsTopNavVisible = createSelector(
-    (state: RootState) => state.UI.isTopNavVisible,
-    (isTopNavVisible) => isTopNavVisible
+export const fullscreenMapSelector = createSelector(
+    (state: RootState) => state.UI.fullscreenMap,
+    (fullscreenMap) => fullscreenMap
 );
 
 export default reducer;
