@@ -1,6 +1,14 @@
 # React-Redux Boilerplate
 
-The Boilerplate to start React projects in an easier and faster way.
+The Boilerplate to start React+Redux project with TypeScript in an easier and faster way. 
+
+## Features
+
+- this template comes with [esri-loader](https://github.com/Esri/esri-loader) and [calcite-web](http://esri.github.io/calcite-web/) to help quickly build Esri-styled web mapping apps. Several [Living Atlas Apps](https://livingatlas.arcgis.com/en/apps/) were built using this Template.
+
+- [ArcGIS Components](./src/components/ArcGIS) helps you to add ArcGIS API for JavaScript objects (MapView, Widgets and Layers) to your app as React components.
+
+- [Atom Components](./src/components/Atoms) that are foundational building blocks that comprise all other components.
 
 ## Quick start
 
