@@ -5,6 +5,7 @@ import {
 } from '../../components';
 
 import {
+    Spacing,
     CalciteGrid
 } from '../../components/Atoms';
 
@@ -18,17 +19,22 @@ const DemoPage = () => {
             column={12}
             centerColumn={true}
         >
-            <div 
-                style={{
-                    position: 'relative',
-                    height: 500,
-                    marginTop: '2rem'
-                }}
+            <Spacing
+                marginTop='3rem'
             >
-                <MapView 
-                    webmapId={WEB_MAP_ID}
-                />
-            </div>
+                <div 
+                    style={{
+                        position: 'relative',
+                        height: 500,
+                    }}
+                >
+                    <MapView 
+                        webmapId={WEB_MAP_ID}
+                    />
+                </div>
+
+            </Spacing>
+
         </CalciteGrid>
     );
 };
