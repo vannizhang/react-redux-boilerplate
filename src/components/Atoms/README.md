@@ -39,6 +39,14 @@ Inspired by this [article](https://atomicdesign.bradfrost.com/chapter-2/), the A
 </CenterAlign>
 ```
 
+### Dispay by specific breakpoints
+
+```jsx
+<DesktopOnly>Desktop or laptop</DesktopOnly>
+<TabletOnly>Tablet</TabletOnly>
+<MobileOnly>Mobile</MobileOnly>
+```
+
 ### PhoneHide
 
 ```jsx
@@ -53,22 +61,6 @@ Inspired by this [article](https://atomicdesign.bradfrost.com/chapter-2/), the A
 <PhoneShow>
     <p>only show this message on mobile device</p>
 </PhoneShow>
-```
-
-### ShowWhenWidth
-
-```jsx
-<ShowWhenWidth
-    lessThan={800}
->
-    <p>only show on narrow screen</p>
-<ShowWhenWidth>
-
-<ShowWhenWidth
-    greaterThan={1280}
->
-    <p>only show on wide screen</p>
-<ShowWhenWidth>
 ```
 
 ### Spacing

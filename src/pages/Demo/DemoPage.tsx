@@ -9,7 +9,7 @@ import {
 
 import { MapView } from '../../components';
 
-import { Spacing, CalciteGrid } from '../../components/Atoms';
+import { Spacing, CalciteGrid, DesktopOnly, TabletOnly, MobileOnly } from '../../components/Atoms';
 
 import { WEB_MAP_ID } from '../../constants/map';
 
