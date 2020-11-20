@@ -66,6 +66,14 @@ Inspired by this [article](https://atomicdesign.bradfrost.com/chapter-2/), the A
 ### Spacing
 
 ```jsx
+
+<Spacing
+    padding={'1rem'}
+    margin={'1rem'}
+>
+    <p>add some padding and margin around me</p>
+</Spacing>
+
 <Spacing
     paddingTop={'1rem'}
     paddingBottom={'1rem'}
