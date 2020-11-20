@@ -7,9 +7,9 @@ import {
     isFullscreenMapToggled,
 } from '../../store/reducers/UI';
 
-import { MapView } from '../../components';
+import { MapView, SearchWidget } from '../../components/ArcGIS';
 
-import { Spacing, CalciteGrid, DesktopOnly, TabletOnly, MobileOnly } from '../../components/Atoms';
+import { Spacing, CalciteGrid } from '../../components/Atoms';
 
 import { WEB_MAP_ID } from '../../constants/map';
 
@@ -41,7 +41,11 @@ const MapContainer: React.FC<MapContainerProps> = ({
 
     return (
         <div style={getStyle()}>
-            <MapView webmapId={WEB_MAP_ID} />
+            <MapView webmapId={WEB_MAP_ID}>
+                <SearchWidget 
+                    position='top-leading'
+                />
+            </MapView>
 
             <div
                 style={{

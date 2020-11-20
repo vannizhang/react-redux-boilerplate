@@ -8,3 +8,13 @@
 >
 </MapView>
 ```
+
+### SearchWidget
+```jsx
+<SearchWidget 
+    position='top-leading'
+    searchCompletedHandler={(result)=>{
+        console.log(result)
+    }}
+/>
+```
