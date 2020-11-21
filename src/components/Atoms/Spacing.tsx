@@ -15,23 +15,27 @@ type Props = {
 };
 
 const Spacing: React.FC<Props> = ({
-    padding=0,
-    margin=0,
-    paddingTop=0,
-    paddingBottom=0,
-    paddingLeft=0,
-    paddingRight=0,
-    marginTop=0,
-    marginBottom=0,
-    marginLeft=0,
-    marginRight=0,
+    padding = 0,
+    margin = 0,
+    paddingTop = 0,
+    paddingBottom = 0,
+    paddingLeft = 0,
+    paddingRight = 0,
+    marginTop = 0,
+    marginBottom = 0,
+    marginLeft = 0,
+    marginRight = 0,
     children,
 }: Props) => {
     return (
         <div
             style={{
-                padding: `${padding || paddingTop} ${padding || paddingRight} ${padding || paddingBottom} ${padding || paddingLeft}`,
-                margin: `${margin || marginTop} ${margin || marginRight} ${margin || marginBottom} ${margin || marginLeft}`
+                padding: `${padding || paddingTop} ${padding || paddingRight} ${
+                    padding || paddingBottom
+                } ${padding || paddingLeft}`,
+                margin: `${margin || marginTop} ${margin || marginRight} ${
+                    margin || marginBottom
+                } ${margin || marginLeft}`,
             }}
         >
             {children}

@@ -42,9 +42,7 @@ const MapContainer: React.FC<MapContainerProps> = ({
     return (
         <div style={getStyle()}>
             <MapView webmapId={WEB_MAP_ID}>
-                <SearchWidget 
-                    position='top-leading'
-                />
+                <SearchWidget position="top-leading" />
             </MapView>
 
             <div
