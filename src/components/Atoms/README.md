@@ -66,7 +66,6 @@ Inspired by this [article](https://atomicdesign.bradfrost.com/chapter-2/), the A
 ### Spacing
 
 ```jsx
-
 <Spacing
     padding={'1rem'}
     margin={'1rem'}
@@ -86,5 +85,4 @@ Inspired by this [article](https://atomicdesign.bradfrost.com/chapter-2/), the A
 >
     <p>add some padding and margin around me</p>
 </Spacing>
-
 ```
