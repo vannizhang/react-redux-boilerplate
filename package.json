@@ -6,10 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "lint": "eslint src/**/*.{ts,tsx} --fix",
-    "format": "prettier --write src/**/*.{ts,tsx,json}",
-    "precommit": "npm run lint && npm run format"
+    "build": "webpack --mode production"
   },
   "husky": {
     "hooks": {
@@ -17,7 +14,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx,json,css,scss}": [
+    "src/**/*.{ts,tsx,json}": [
       "prettier --write",
       "eslint --fix src/"
     ]
