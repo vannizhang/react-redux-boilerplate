@@ -8,9 +8,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CopyPlugin = require('copy-webpack-plugin');
 
-// name of the thumbnail image from "./public" folder that will be used for social media meta tags
-// const ThumbnailImageName = 'thumbnail.jpg';
-
 module.exports =  (env, options)=> {
 
     const devMode = options.mode === 'development' ? true : false;
@@ -33,7 +30,7 @@ module.exports =  (env, options)=> {
                     loader: 'babel-loader'
                 },
                 {
-                    test: /\.s?[ac]ss$/,
+                    test: /\.css$/i,
                     use: [
                         devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
                         {
@@ -42,10 +39,6 @@ module.exports =  (env, options)=> {
                             }
                         }, {
                             loader: 'resolve-url-loader',
-                        }, {
-                            loader: "sass-loader", options: {
-                                sourceMap: true
-                            }
                         }
                     ]
                 },
