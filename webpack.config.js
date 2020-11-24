@@ -6,6 +6,10 @@ const TerserPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssets = require('optimize-css-assets-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const CopyPlugin = require('copy-webpack-plugin');
+
+// name of the thumbnail image from "./public" folder that will be used for social media meta tags
+// const ThumbnailImageName = 'thumbnail.jpg';
 
 module.exports =  (env, options)=> {
 
@@ -68,6 +72,10 @@ module.exports =  (env, options)=> {
                         }
                     }
                 },
+                {
+                    test:/favicon\.(png|ico)$/, 
+                    loader: 'file-loader?name=[name].[ext]'
+                }
             ]
         },
         plugins: [
@@ -77,8 +85,19 @@ module.exports =  (env, options)=> {
                 filename: devMode ? '[name].css' : '[name].[contenthash].css',
                 chunkFilename: devMode ? '[name].css' : '[name].[contenthash].css',
             }),
+            // copy static files from public folder to build directory
+            new CopyPlugin({
+                patterns: [
+                    { 
+                        from: "public/**/*", 
+                        globOptions: {
+                            ignore: ["**/index.html"],
+                        },
+                    }
+                ],
+            }),
             new HtmlWebpackPlugin({
-                template: './src/index.template.html',
+                template: './public/index.html',
                 filename: 'index.html',
                 title: package.name,
                 meta: {
@@ -87,7 +106,10 @@ module.exports =  (env, options)=> {
                     author: package.author,
                     keywords: Array.isArray(package.keywords) 
                         ? package.keywords.join(',') 
-                        : undefined
+                        : undefined,
+                    'og:title': package.name,
+                    'og:description': package.description,
+                    'og:url': package.homepage,
                 },
                 minify: {
                     html5                          : true,
