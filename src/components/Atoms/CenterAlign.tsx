@@ -1,29 +1,21 @@
-import React from 'react';
+import styled from 'styled-components';
 
 type Props = {
     horizontal?: boolean;
     vertical?: boolean;
-    children?: React.ReactNode;
 };
 
-const CenterAlign: React.FC<Props> = ({
-    horizontal = true,
-    vertical = true,
-    children,
-}: Props) => {
-    return (
-        <div
-            style={{
-                display: 'flex',
-                justifyContent: horizontal ? 'center' : 'flex-start',
-                alignItems: vertical ? 'center' : 'flex-start',
-                width: '100%',
-                height: '100%',
-            }}
-        >
-            {children}
-        </div>
-    );
+const CenterAlign = styled.div<Props>`
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: ${(props) => (props.horizontal ? 'center' : 'flex-start')};
+    align-items: ${(props) => (props.vertical ? 'center' : 'flex-start')};
+`;
+
+CenterAlign.defaultProps = {
+    horizontal: true,
+    vertical: true,
 };
 
 export default CenterAlign;

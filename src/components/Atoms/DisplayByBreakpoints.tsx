@@ -1,21 +1,27 @@
-import React from 'react';
-import { useMediaQuery } from 'react-responsive';
+import styled from 'styled-components';
 
-type Props = {
-    children: React.ReactNode;
-};
+const DesktopMinWidth = 992;
+const MobileMaxWidth = 767;
+const TabletMaxWith = DesktopMinWidth - 1;
+const TabletMinWidth = MobileMaxWidth + 1;
 
-export const DesktopOnly: React.FC<Props> = ({ children }: Props) => {
-    const isDesktop = useMediaQuery({ minWidth: 992 });
-    return <> {isDesktop ? children : null} </>;
-};
+export const DesktopOnly = styled.div`
+    display: none;
+    @media (min-width: ${DesktopMinWidth}px) {
+        display: block;
+    }
+`;
 
-export const TabletOnly: React.FC<Props> = ({ children }: Props) => {
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
-    return <> {isTablet ? children : null} </>;
-};
+export const TabletOnly = styled.div`
+    display: none;
+    @media (max-width: ${TabletMaxWith}px) and (min-width: ${TabletMinWidth}px) {
+        display: block;
+    }
+`;
 
-export const MobileOnly: React.FC<Props> = ({ children }: Props) => {
-    const isMobile = useMediaQuery({ maxWidth: 767 });
-    return <> {isMobile ? children : null} </>;
-};
+export const MobileOnly = styled.div`
+    display: none;
+    @media (max-width: 767px) {
+        display: block;
+    }
+`;
