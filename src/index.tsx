@@ -20,11 +20,13 @@ setDefaultOptions({
     const preloadedState = getPreloadedState();
 
     ReactDOM.render(
-        <ReduxProvider store={configureAppStore(preloadedState)}>
-            <AppContextProvider>
-                <DemoPage />
-            </AppContextProvider>
-        </ReduxProvider>,
+        <React.StrictMode>
+            <ReduxProvider store={configureAppStore(preloadedState)}>
+                <AppContextProvider>
+                    <DemoPage />
+                </AppContextProvider>
+            </ReduxProvider>
+        </React.StrictMode>,
         document.getElementById('root')
     );
 })();

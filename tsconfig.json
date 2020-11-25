@@ -12,10 +12,16 @@
         "resolveJsonModule": true,
         "esModuleInterop": true ,
         "suppressImplicitAnyIndexErrors": true,
-        "typeRoots": [  "./types", "./node_modules/@types"],
+        "typeRoots": [  
+            "./src/types", 
+            "./node_modules/@types"
+        ],
         "lib": [ "es2015", "dom" ]
     },
-    "exclude": ["node_modules", "typings"],
+    "exclude": [
+        "**/node_modules", 
+        "**/.*/"
+    ],
     "include": [
         "./src/**/**/*"
     ]

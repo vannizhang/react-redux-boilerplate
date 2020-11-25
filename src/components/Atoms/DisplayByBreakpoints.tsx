@@ -21,7 +21,7 @@ export const TabletOnly = styled.div`
 
 export const MobileOnly = styled.div`
     display: none;
-    @media (max-width: 767px) {
+    @media (max-width: ${MobileMaxWidth}px) {
         display: block;
     }
 `;
