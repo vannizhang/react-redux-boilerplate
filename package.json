@@ -16,7 +16,7 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,json}": [
-      "jest --passWithNoTests",
+      "jest --bail --passWithNoTests",
       "prettier --write",
       "eslint --fix src/"
     ]
