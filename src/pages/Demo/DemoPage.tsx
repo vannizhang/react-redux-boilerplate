@@ -5,13 +5,13 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
     fullscreenMapSelector,
     isFullscreenMapToggled,
-} from '../../store/reducers/UI';
+} from '@store/reducers/UI';
 
-import { MapView, SearchWidget } from '../../components/ArcGIS';
+import { MapView, SearchWidget } from '@components/ArcGIS';
 
-import { Spacing, CalciteGrid } from '../../components/Atoms';
+import { Spacing, CalciteGrid } from '@components/Atoms';
 
-import { WEB_MAP_ID } from '../../constants/map';
+import { WEB_MAP_ID } from '@constants/map';
 
 type MapContainerProps = {
     isFullscreen: boolean;

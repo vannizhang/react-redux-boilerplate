@@ -16,7 +16,17 @@
             "./src/types", 
             "./node_modules/@types"
         ],
-        "lib": [ "es2015", "dom" ]
+        "lib": [ "es2015", "dom" ],
+        "baseUrl": "./src",
+        "paths": {
+            "@components": ["./components"],
+            "@components/*": ["./components/*"],
+            "@constants/*": ["./constants/*"],
+            "@hooks/*": ["./hooks/*"],
+            "@store/*": ["./store/*"],
+            "@services/*": ["./services/*"],
+            "@utils/*": ["./utils/*"]
+        }
     },
     "exclude": [
         "**/node_modules", 
