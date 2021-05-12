@@ -1,32 +1,4 @@
-## Atoms components
-
-Inspired by this [article](https://atomicdesign.bradfrost.com/chapter-2/), the Atom Components are foundational building blocks that comprise all other components, these atoms include basic HTML elements like form labels, inputs, buttons, and others that can’t be broken down any further without ceasing to be functional.
-
-### [CalciteGrid](http://esri.github.io/calcite-web/documentation/grid/#container)
-```jsx
-<CalciteGrid 
-    column={12} 
-    centerColumn={true}
->
-    <p>foobar</p>
-</CalciteGrid>
-```
-
-### CalciteLink
-```jsx
-<CalciteLink
-    href='//esri.com' 
-    text='esri'
-    color='light-blue'
-/>
-```
-
-### [CalciteLoader](http://esri.github.io/calcite-web/documentation/components/#loader)
-```jsx
-<CalciteLoader
-    message='loading...'
-/>
-```
+## Utility components
 
 ### CenterAlign
 
