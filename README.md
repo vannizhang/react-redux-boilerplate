@@ -4,7 +4,16 @@ The Boilerplate to start React+Redux project with TypeScript in an easier and fa
 
 ## Features
 
-- this template comes with [esri-loader](https://github.com/Esri/esri-loader) and [calcite-web](http://esri.github.io/calcite-web/) to help quickly build Esri-styled web mapping apps. Several [Living Atlas Apps](https://livingatlas.arcgis.com/en/apps/) were built using this Template.
+- React
+- Redux
+- TypeScript
+- Webpack
+- Jest
+- styled-components
+- EsLint
+- Prettier
+- [Esri-Loader](https://github.com/Esri/esri-loader)
+- [Calcite-Web](http://esri.github.io/calcite-web/)
 
 ## Getting Started
 
@@ -37,3 +46,35 @@ The Boilerplate to start React+Redux project with TypeScript in an easier and fa
     ```
 
 ## Project Structure
+
+```sh
+├── public  
+    ├── favicon.ico
+    ├── index.html # html template for the app
+    ├── thumbnail.jpg # an image will be used in og:image meta tag
+├── src                         # Source code.
+    ├── components # reusable UI components
+        ├── ArcGIS # building blocks for the Map Interface with ArcGIS API for JavaScript (e.g. MapView, Search Widget and tec)
+        ├── Calcite # components with Esri Calcite style
+        ├── Helper # reusable components to solve tedius UI tasks (e.g. show in phone view, hide in phone view and etc)
+    ├── constants # app-wide constants (text, URLs, themes and etc)
+    ├── contexts # React contexts
+    ├── hooks # reusable custome hooks
+    ├── pages # Page components
+    ├── services # API calls
+    ├── static # static assets
+    ├── store # Redux store
+        ├── reducers # reducers to manage app's state
+        ├── configureStore.ts
+        ├── getPreloadedState.ts 
+    ├── styles # app-wide styles
+    ├── types # type definitions
+    ├── utils # utility functions
+    └── index.tsx # entry point for the app
+├── .babelrc
+├── .eslintrc.js
+├── .prettierrc.js
+├── package.json
+├── tsconfig.json
+├── webpack.config.js
+```
