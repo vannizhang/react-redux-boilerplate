@@ -50,27 +50,27 @@ The Boilerplate to start React+Redux project with TypeScript in an easier and fa
 ```sh
 ├── public  
     ├── favicon.ico
-    ├── index.html # html template for the app
-    ├── thumbnail.jpg # an image will be used in og:image meta tag
+    ├── index.html              # html template for the app
+    ├── thumbnail.jpg           # an image will be used in og:image meta tag
 ├── src                         # Source code.
-    ├── components # reusable UI components
-        ├── ArcGIS # building blocks for the Map Interface with ArcGIS API for JavaScript (e.g. MapView, Search Widget and tec)
-        ├── Calcite # components with Esri Calcite style
-        ├── Helper # reusable components to solve tedius UI tasks (e.g. show in phone view, hide in phone view and etc)
-    ├── constants # app-wide constants (text, URLs, themes and etc)
-    ├── contexts # React contexts
-    ├── hooks # reusable custome hooks
-    ├── pages # Page components
-    ├── services # API calls
-    ├── static # static assets
-    ├── store # Redux store
-        ├── reducers # reducers to manage app's state
+    ├── components              # reusable UI components
+        ├── ArcGIS              # building blocks for the Map Interface with ArcGIS API for JavaScript (e.g. MapView, Search Widget and tec)
+        ├── Calcite             # components with Esri Calcite style
+        ├── Helper              # reusable components to solve tedius UI tasks (e.g. show in phone view, hide in phone view and etc)
+    ├── constants               # app-wide constants (text, URLs, themes and etc)
+    ├── contexts                # React contexts
+    ├── hooks                   # reusable custome hooks
+    ├── pages                   # Page components
+    ├── services                # API calls
+    ├── static                  # static assets
+    ├── store                   # Redux store
+        ├── reducers            # reducers to manage app's state
         ├── configureStore.ts
         ├── getPreloadedState.ts 
-    ├── styles # app-wide styles
-    ├── types # type definitions
-    ├── utils # utility functions
-    └── index.tsx # entry point for the app
+    ├── styles                  # app-wide styles
+    ├── types                   # type definitions
+    ├── utils                   # utility functions
+    └── index.tsx               # entry point for the app
 ├── .babelrc
 ├── .eslintrc.js
 ├── .prettierrc.js
