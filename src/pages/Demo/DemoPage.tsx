@@ -9,7 +9,7 @@ import {
 
 import { MapView, SearchWidget } from '../../components/ArcGIS';
 
-import { Spacing } from '../../components/Utility';
+import { Spacing } from '../../components/Helper';
 import { CalciteGrid } from '../../components/Calcite';
 import { WEB_MAP_ID } from '../../constants/map';
 

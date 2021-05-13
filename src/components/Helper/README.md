@@ -1,4 +1,4 @@
-## Utility components
+## Helper Components
 
 ### CenterAlign
 

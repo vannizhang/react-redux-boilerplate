@@ -6,18 +6,34 @@ The Boilerplate to start React+Redux project with TypeScript in an easier and fa
 
 - this template comes with [esri-loader](https://github.com/Esri/esri-loader) and [calcite-web](http://esri.github.io/calcite-web/) to help quickly build Esri-styled web mapping apps. Several [Living Atlas Apps](https://livingatlas.arcgis.com/en/apps/) were built using this Template.
 
-- [ArcGIS Components](./src/components/ArcGIS) helps you to add ArcGIS API for JavaScript objects (MapView, Widgets and Layers) to your app as React components.
-
-- [Atom Components](./src/components/Atoms) that are foundational building blocks that comprise all other components.
-
-## Quick start
+## Getting Started
 
 1. Make sure you have a fresh version of [Node.js](https://nodejs.org/en/) and NPM installed. The current Long Term Support (LTS) release is an ideal starting point
 
-2. Clone this repository to your computer: `git clone https://github.com/vannizhang/react-redux-boilerplate.git`
+2. Clone this repository to your computer: 
+    ```sh
+    git clone https://github.com/vannizhang/react-redux-boilerplate.git
+    ```
 
-3. Move to project's directory, run `npm install` to install the required packages (dependencies)
 
-4. Run `npm run start` to see the example app at http://localhost:8080
+3. From the project's root directory, install the required packages (dependencies):
 
-5. Run `npm run build` to generate the production build
+    ```sh
+    npm install
+    ```
+
+4. To run and test the app on your local machine (http://localhost:8080):
+
+    ```sh
+    # it will start a server instance and begin listening for connections from localhost on port 8080
+    npm run start
+    ```
+
+5. To build/deploye the app, you can run:
+
+    ```sh
+    # it will place all files needed for deployment into the /dist directory 
+    npm run build
+    ```
+
+## Project Structure
