@@ -54,7 +54,6 @@ The Boilerplate to start React+Redux project with TypeScript in an easier and fa
 ├── src                         # Source code.
     ├── components              # reusable UI components
         ├── ArcGIS              # building blocks for the Map Interface with ArcGIS API for JavaScript (e.g. MapView, Search Widget and tec)
-        ├── Helper              # reusable components to solve tedius UI tasks (e.g. show in phone view, hide in phone view and etc)
     ├── constants               # app-wide constants (text, URLs, themes and etc)
     ├── contexts                # React contexts
     ├── hooks                   # reusable custome hooks
