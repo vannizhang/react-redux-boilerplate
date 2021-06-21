@@ -37,8 +37,6 @@ module.exports =  (env, options)=> {
                             loader: "css-loader", options: {
                                 sourceMap: true
                             }
-                        }, {
-                            loader: 'resolve-url-loader',
                         }
                     ]
                 },
