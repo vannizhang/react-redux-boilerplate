@@ -12,6 +12,8 @@ module.exports =  (env, options)=> {
 
     const devMode = options.mode === 'development' ? true : false;
 
+    process.env.NODE_ENV = options.mode;
+
     return {
         entry: path.resolve(__dirname, './src/index.tsx'),
         output: {
@@ -31,36 +33,21 @@ module.exports =  (env, options)=> {
                 },
                 {
                     test: /\.css$/i,
+                    include: path.resolve(__dirname, 'src'),
                     use: [
                         devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
                         {
                             loader: "css-loader", options: {
                                 sourceMap: true
                             }
+                        }, 
+                        {
+                            loader: 'postcss-loader'
                         }
-                    ]
+                    ],
                 },
                 { test: /\.(woff|woff2|ttf|eot)$/,  loader: "file-loader" },
-                { 
-                    test: /\.svg$/,  
-                    loader: "url-loader",
-                    options: {
-                        limit: 10000,
-                        fallback: {
-                            loader: "file-loader"
-                        }
-                    }
-                },
-                {   
-                    test: /\.(png|jpg|gif)$/,  
-                    loader: "url-loader",
-                    options: {
-                        limit: 10000,
-                        fallback: {
-                            loader: "file-loader"
-                        }
-                    }
-                }
+                { test: /\.(png|jpg|gif|svg)$/,  loader: "file-loader" },
             ]
         },
         plugins: [

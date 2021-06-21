@@ -10,53 +10,34 @@ import {
 import { MapView, SearchWidget } from '../../components/ArcGIS';
 import { WEB_MAP_ID } from '../../constants/map';
 
-const ToggleBtn = () => {
+const ToggleBtn: React.FC = () => {
     const dispatch = useDispatch();
 
     const fullscreenMap = useSelector(fullscreenMapSelector);
 
     return (
-        <div
-            style={{
-                position: 'absolute',
-                top: '1rem',
-                right: '1rem',
+        <button
+            className="btn absolute top-2 right-2 bg-blue-500 text-white py-2 px-4 rounded"
+            onClick={() => {
+                dispatch(isFullscreenMapToggled());
             }}
         >
-            <button
-                className="btn"
-                onClick={() => {
-                    dispatch(isFullscreenMapToggled());
-                }}
-            >
-                {!fullscreenMap ? 'open full screen map' : 'close full screen'}
-            </button>
-        </div>
+            {!fullscreenMap ? 'open full screen map' : 'close full screen'}
+        </button>
     );
 };
 
-const MapContainer = () => {
+const MapContainer: React.FC = () => {
     const fullscreenMap = useSelector(fullscreenMapSelector);
 
-    const getContainerStyle = (): React.CSSProperties => {
-        if (fullscreenMap) {
-            return {
-                position: 'fixed',
-                top: 0,
-                left: 0,
-                height: '100vh',
-                width: '100vw',
-            };
-        }
-
-        return {
-            position: 'relative',
-            height: 500,
-        };
-    };
-
     return (
-        <div style={getContainerStyle()}>
+        <div
+            className={
+                fullscreenMap
+                    ? 'fixed top-0 left-0 w-full h-full'
+                    : 'relative w-full h-96'
+            }
+        >
             <MapView webmapId={WEB_MAP_ID}>
                 <SearchWidget position="top-leading" />
             </MapView>
