@@ -3,7 +3,7 @@ const package = require('./package.json');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require('terser-webpack-plugin');
-const OptimizeCSSAssets = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CopyPlugin = require('copy-webpack-plugin');
@@ -138,7 +138,7 @@ module.exports =  (env, options)=> {
                         }
                     }
                 }), 
-                new OptimizeCSSAssets({})
+                new CssMinimizerPlugin()
             ]
         },
     }
