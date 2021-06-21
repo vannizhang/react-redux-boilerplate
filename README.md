@@ -9,6 +9,7 @@ The Boilerplate to start React+Redux project with TypeScript in an easier and fa
 - TypeScript
 - Webpack
 - Jest
+- Tailwind
 - styled-components
 - EsLint
 - Prettier
@@ -74,4 +75,6 @@ The Boilerplate to start React+Redux project with TypeScript in an easier and fa
 ├── package.json
 ├── tsconfig.json
 ├── webpack.config.js
+├── tailwind.config.js
+├── postcss.config.js
 ```
