@@ -35,7 +35,7 @@ const MapContainer: React.FC = () => {
             className={
                 fullscreenMap
                     ? 'fixed top-0 left-0 w-full h-full'
-                    : 'relative w-full h-96'
+                    : 'relative w-96 h-96 ml-auto mr-auto'
             }
         >
             <MapView webmapId={WEB_MAP_ID}>
