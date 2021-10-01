@@ -64,6 +64,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
     "file-loader": "^6.2.0",
+    "fork-ts-checker-webpack-plugin": "^6.3.3",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "husky": "^4.3.0",

@@ -8,12 +8,12 @@ import {
 import { RootState, StoreDispatch, StoreGetState } from '../configureStore';
 
 export type UIState = {
-    fullscreenMap: boolean;
+    fullscreenMap?: boolean;
 };
 
-export const initialUIState = {
+export const initialUIState: UIState = {
     fullscreenMap: false,
-} as UIState;
+};
 
 const slice = createSlice({
     name: 'UI',
