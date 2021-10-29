@@ -13,7 +13,6 @@ The Boilerplate to start React+Redux project with TypeScript in an easier and fa
 - styled-components
 - EsLint
 - Prettier
-- [Esri-Loader](https://github.com/Esri/esri-loader)
 
 ## Getting Started
 
