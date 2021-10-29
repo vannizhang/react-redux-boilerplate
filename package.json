@@ -88,7 +88,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.0",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "classnames": "^2.2.6",
     "esri-loader": "^3.1.0",
     "helper-toolkit-ts": "^1.1.13",
