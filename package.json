@@ -89,7 +89,7 @@
     "@reduxjs/toolkit": "^1.6.0",
     "axios": "^0.21.2",
     "classnames": "^2.2.6",
-    "esri-loader": "^3.3.0",
+    "esri-loader": "^3.4.0",
     "helper-toolkit-ts": "^1.1.13",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

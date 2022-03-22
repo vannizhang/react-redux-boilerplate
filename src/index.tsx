@@ -8,13 +8,7 @@ import configureAppStore, { getPreloadedState } from './store/configureStore';
 
 import AppContextProvider from './contexts/AppContextProvider';
 
-import { setDefaultOptions } from 'esri-loader';
-
 import { DemoPage, RootPage } from './pages';
-
-setDefaultOptions({
-    url: 'https://js.arcgis.com/next/',
-});
 
 (async () => {
     const preloadedState = getPreloadedState();
