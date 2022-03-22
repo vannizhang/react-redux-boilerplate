@@ -16,6 +16,7 @@ module.exports =  (env, options)=> {
     process.env.NODE_ENV = options.mode;
 
     return {
+        mode: options.mode,
         entry: path.resolve(__dirname, './src/index.tsx'),
         output: {
             path: path.resolve(__dirname, './dist'),
