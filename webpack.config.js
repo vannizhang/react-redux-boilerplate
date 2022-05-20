@@ -5,9 +5,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CopyPlugin = require('copy-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+// const PreloadWebpackPlugin = require('@vue/preload-webpack-plugin');
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports =  (env, options)=> {
 
@@ -48,8 +49,20 @@ module.exports =  (env, options)=> {
                         }
                     ],
                 },
-                { test: /\.(woff|woff2|ttf|eot)$/,  loader: "file-loader" },
-                { test: /\.(png|jpg|gif|svg)$/,  loader: "file-loader" },
+                { 
+                    test: /\.(woff|woff2|ttf|eot)$/,  
+                    loader: "file-loader",
+                    options: {
+                        name: '[name].[contenthash].[ext]',
+                    }
+                },
+                { 
+                    test: /\.(png|jpg|gif|svg)$/,  
+                    loader: "file-loader",
+                    options: {
+                        name: '[name].[contenthash].[ext]',
+                    }
+                },
             ]
         },
         plugins: [
@@ -102,8 +115,24 @@ module.exports =  (env, options)=> {
                     useShortDoctype                : true
                 }
             }),
+            // new PreloadWebpackPlugin({
+            //     rel: 'preload',
+            //     as(entry) {
+            //         if (/\.(woff|woff2|ttf|eot)$/.test(entry)) {
+            //             return 'font';
+            //         }
+            //         if (/\.(png|jpg|gif|svg)$/.test(entry)) {
+            //             return 'image';
+            //         }
+            //     },
+            //     fileWhitelist: [
+            //         /\.(woff|woff2|ttf|eot)$/, 
+            //         /\.(png|jpg|gif|svg)$/
+            //     ],
+            //     include: 'all'
+            // }),
             !devMode ? new CleanWebpackPlugin() : false,
-            !devMode ? new BundleAnalyzerPlugin() : false
+            // !devMode ? new BundleAnalyzerPlugin() : false
         ].filter(Boolean),
         optimization: {
             splitChunks: {
