@@ -7,7 +7,6 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-// const PreloadWebpackPlugin = require('@vue/preload-webpack-plugin');
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports =  (env, options)=> {
@@ -115,22 +114,6 @@ module.exports =  (env, options)=> {
                     useShortDoctype                : true
                 }
             }),
-            // new PreloadWebpackPlugin({
-            //     rel: 'preload',
-            //     as(entry) {
-            //         if (/\.(woff|woff2|ttf|eot)$/.test(entry)) {
-            //             return 'font';
-            //         }
-            //         if (/\.(png|jpg|gif|svg)$/.test(entry)) {
-            //             return 'image';
-            //         }
-            //     },
-            //     fileWhitelist: [
-            //         /\.(woff|woff2|ttf|eot)$/, 
-            //         /\.(png|jpg|gif|svg)$/
-            //     ],
-            //     include: 'all'
-            // }),
             !devMode ? new CleanWebpackPlugin() : false,
             // !devMode ? new BundleAnalyzerPlugin() : false
         ].filter(Boolean),
