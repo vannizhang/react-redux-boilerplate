@@ -10,7 +10,6 @@ The Boilerplate to start React+Redux project with TypeScript in an easier and fa
 - Webpack
 - Jest
 - Tailwind
-- styled-components
 - EsLint
 - Prettier
 
@@ -68,12 +67,29 @@ The Boilerplate to start React+Redux project with TypeScript in an easier and fa
     ├── types                   # type definitions
     ├── utils                   # utility functions
     └── index.tsx               # entry point for the app
-├── .babelrc
-├── .eslintrc.js
-├── .prettierrc.js
-├── package.json
-├── tsconfig.json
-├── webpack.config.js
-├── tailwind.config.js
-├── postcss.config.js
+├── .babelrc                    # Babel configuration
+├── .eslintrc.js                # ESLint configuration
+├── .prettierrc.js              # Prettier configuration
+├── tsconfig.json               # TypeScript configuration
+├── webpack.config.js           # Webpack configurations
+├── tailwind.config.js          # Tailwind CSS configurations
+├── postcss.config.js           # PostCSS configurations
 ```
+
+## Issues
+Find a bug or want to request a new feature? Please let me know by submitting an issue.
+
+## Licensing
+Copyright 2022 Jinnan Zhang
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

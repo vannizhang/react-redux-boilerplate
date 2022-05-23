@@ -10,6 +10,8 @@ import {
 import { MapView, SearchWidget } from '../../components/ArcGIS';
 import { WEB_MAP_ID } from '../../constants/map';
 
+import { ErrorBoundary } from '../../components';
+
 const ToggleBtn: React.FC = () => {
     const dispatch = useDispatch();
 
@@ -48,8 +50,10 @@ const MapContainer: React.FC = () => {
 const DemoPage = () => {
     return (
         <>
-            <MapContainer />
-            <ToggleBtn />
+            <ErrorBoundary>
+                <MapContainer />
+                <ToggleBtn />
+            </ErrorBoundary>
         </>
     );
 };
