@@ -95,5 +95,8 @@
     "react-dom": "^18.1.0",
     "react-redux": "^8.0.2",
     "redux": "^4.1.0"
-  }
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
