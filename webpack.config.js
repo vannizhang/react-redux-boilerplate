@@ -37,9 +37,10 @@ module.exports =  (env, options)=> {
                     test: /\.css$/i,
                     include: path.resolve(__dirname, 'src'),
                     use: [
-                        devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                        MiniCssExtractPlugin.loader,
                         {
-                            loader: "css-loader", options: {
+                            loader: "css-loader", 
+                            options: {
                                 sourceMap: true
                             }
                         }, 
@@ -120,8 +121,6 @@ module.exports =  (env, options)=> {
         optimization: {
             splitChunks: {
                 cacheGroups: {
-                    default: false,
-                    vendors: false,
                     // vendor chunk
                     vendor: {
                         // sync + async chunks
