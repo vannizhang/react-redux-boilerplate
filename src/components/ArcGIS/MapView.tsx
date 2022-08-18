@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 import { loadModules, loadCss } from 'esri-loader';
 import IMapView from 'esri/views/MapView';
@@ -10,9 +10,9 @@ interface Props {
 }
 
 const MapView: React.FC<Props> = ({ webmapId, children }: Props) => {
-    const mapDivRef = React.useRef<HTMLDivElement>();
+    const mapDivRef = useRef<HTMLDivElement>();
 
-    const [mapView, setMapView] = React.useState<IMapView>(null);
+    const [mapView, setMapView] = useState<IMapView>(null);
 
     const initMapView = async () => {
         type Modules = [typeof IMapView, typeof IWebMap];
@@ -40,10 +40,35 @@ const MapView: React.FC<Props> = ({ webmapId, children }: Props) => {
         }
     };
 
-    React.useEffect(() => {
+    const updateWebmap = async()=>{
+        type Modules = [typeof IWebMap];
+
+        try {
+            const [WebMap] = await (loadModules([
+                'esri/WebMap',
+            ]) as Promise<Modules>);
+
+            mapView.map = new WebMap({
+                portalItem: {
+                    id: webmapId,
+                },
+            })
+
+        } catch (err) {
+            console.error(err);
+        }
+    }
+
+    useEffect(() => {
         loadCss();
         initMapView();
     }, []);
+
+    useEffect(() => {
+        if(mapView){
+            updateWebmap()
+        }
+    }, [webmapId]);
 
     return (
         <>

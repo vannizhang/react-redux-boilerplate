@@ -1,48 +1,58 @@
 import React from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
-
-import {
-    fullscreenMapSelector,
-    isFullscreenMapToggled,
-} from '../../store/reducers/UI';
-
-import { MapView, SearchWidget } from '../../components/ArcGIS';
-import { WEB_MAP_ID } from '../../constants/map';
+import { MapView } from '../../components/ArcGIS';
 
 import { ErrorBoundary } from '../../components';
+import { selectWebmapId } from '../../store/Map/selectors';
+import classNames from 'classnames';
+import { updateWebmap } from '../../store/Map/thunks';
 
-const ToggleBtn: React.FC = () => {
-    const dispatch = useDispatch();
+const WebmapSelector = ()=>{
 
-    const fullscreenMap = useSelector(fullscreenMapSelector);
+    const dispatch = useDispatch()
+
+    const webmapId = useSelector(selectWebmapId)
+
+    const webmapData = [
+        { name: 'Topo', id: '67372ff42cd145319639a99152b15bc3'},
+        { name: 'Imagery', id: '86265e5a4bbb4187a59719cf134e0018'}
+    ];
 
     return (
-        <button
-            className="btn absolute top-2 right-2 bg-blue-500 text-white py-2 px-4 rounded"
-            onClick={() => {
-                dispatch(isFullscreenMapToggled());
-            }}
-        >
-            {!fullscreenMap ? 'open full screen map' : 'close full screen'}
-        </button>
-    );
-};
+        <div className='absolute right-4 top-4 flex py-2 px-3 z-10 bg-slate-900 text-sm'>
+            { 
+                webmapData.map(({name, id})=>{
+                    return (
+                        <div 
+                            key={id}
+                            className={
+                                classNames("px-2 pb-1 cursor-pointer border-b-2", {
+                                    'border-blue-300': id === webmapId,
+                                    'border-transparent': id !== webmapId,
+                                    'text-white': id === webmapId,
+                                    'text-gray-300': id !== webmapId,
+                                })
+                            }
+                            onClick={()=>{
+                                dispatch(updateWebmap(id))
+                            }}
+                        >{name}</div>
+                    )
+                })
+            }
+        </div>
+    )
+}
 
 const MapContainer: React.FC = () => {
-    const fullscreenMap = useSelector(fullscreenMapSelector);
+    const webmapId = useSelector(selectWebmapId)
 
     return (
         <div
-            className={
-                fullscreenMap
-                    ? 'fixed top-0 left-0 w-full h-full'
-                    : 'relative w-96 h-96 ml-auto mr-auto'
-            }
+            className={'fixed top-0 left-0 w-full h-full'}
         >
-            <MapView webmapId={WEB_MAP_ID}>
-                <SearchWidget position="top-leading" />
-            </MapView>
+            <MapView webmapId={webmapId} />
         </div>
     );
 };
@@ -52,7 +62,7 @@ const DemoPage = () => {
         <>
             <ErrorBoundary>
                 <MapContainer />
-                <ToggleBtn />
+                <WebmapSelector />
             </ErrorBoundary>
         </>
     );
