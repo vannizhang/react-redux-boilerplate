@@ -40,7 +40,7 @@ const MapView: React.FC<Props> = ({ webmapId, children }: Props) => {
         }
     };
 
-    const updateWebmap = async()=>{
+    const updateWebmap = async () => {
         type Modules = [typeof IWebMap];
 
         try {
@@ -52,12 +52,11 @@ const MapView: React.FC<Props> = ({ webmapId, children }: Props) => {
                 portalItem: {
                     id: webmapId,
                 },
-            })
-
+            });
         } catch (err) {
             console.error(err);
         }
-    }
+    };
 
     useEffect(() => {
         loadCss();
@@ -65,8 +64,8 @@ const MapView: React.FC<Props> = ({ webmapId, children }: Props) => {
     }, []);
 
     useEffect(() => {
-        if(mapView){
-            updateWebmap()
+        if (mapView) {
+            updateWebmap();
         }
     }, [webmapId]);
 

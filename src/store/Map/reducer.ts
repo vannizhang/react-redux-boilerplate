@@ -20,7 +20,7 @@ const slice = createSlice({
     name: 'Map',
     initialState: initialMapState,
     reducers: {
-        webmapIdChanged: (state, action:PayloadAction<string>) => {
+        webmapIdChanged: (state, action: PayloadAction<string>) => {
             state.webmapId = action.payload;
         },
     },
