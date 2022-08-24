@@ -1,11 +1,11 @@
 import {
     createSlice,
-    createSelector,
+    // createSelector,
     PayloadAction,
     // createAsyncThunk
 } from '@reduxjs/toolkit';
 
-import { RootState, StoreDispatch, StoreGetState } from '../configureStore';
+// import { RootState, StoreDispatch, StoreGetState } from '../configureStore';
 
 export type MapState = {
     // ArcGIS Online Webmap Item Id
