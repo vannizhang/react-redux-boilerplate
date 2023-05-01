@@ -6,7 +6,7 @@ import { MapView } from '../../components/ArcGIS';
 import { ErrorBoundary } from '../../components';
 import { selectWebmapId } from '../../store/Map/selectors';
 import classNames from 'classnames';
-import { updateWebmap } from '../../store/Map/thunks';
+import { updateWebmapId } from '../../store/Map/thunks';
 
 const WebmapSelector = () => {
     const dispatch = useDispatch();
@@ -34,7 +34,7 @@ const WebmapSelector = () => {
                             }
                         )}
                         onClick={() => {
-                            dispatch(updateWebmap(id));
+                            dispatch(updateWebmapId(id));
                         }}
                     >
                         {name}

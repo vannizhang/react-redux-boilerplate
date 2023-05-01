@@ -40,7 +40,7 @@ const MapView: React.FC<Props> = ({ webmapId, children }: Props) => {
         }
     };
 
-    const updateWebmap = async () => {
+    const updateWebmapId = async () => {
         type Modules = [typeof IWebMap];
 
         try {
@@ -65,7 +65,7 @@ const MapView: React.FC<Props> = ({ webmapId, children }: Props) => {
 
     useEffect(() => {
         if (mapView) {
-            updateWebmap();
+            updateWebmapId();
         }
     }, [webmapId]);
 
