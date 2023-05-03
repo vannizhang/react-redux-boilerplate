@@ -1,7 +1,7 @@
 import React from 'react';
 import { ErrorBoundary } from '../../components';
 
-const HomePage = () => {
+const Home = () => {
     return (
         <ErrorBoundary>
             <h1>React Redux Boilerplate</h1>
@@ -10,4 +10,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default Home;

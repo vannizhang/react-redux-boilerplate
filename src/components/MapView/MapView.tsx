@@ -5,11 +5,32 @@ import IMapView from 'esri/views/MapView';
 import IWebMap from 'esri/WebMap';
 
 interface Props {
+    /**
+     * item id of the selected webmap
+     */
     webmapId: string;
+    /**
+     * center of the map view in format of [longitude, latitude] (e.g. [-105, 40])
+     */
+    center?: number[];
+    /**
+     * zoom level
+     */
+    zoom?: number;
+    /**
+     * all child element will receive the mapView as one of it's properties
+     */
     children?: React.ReactNode;
 }
 
-const MapView: React.FC<Props> = ({ webmapId, children }: Props) => {
+loadCss();
+
+const MapView: React.FC<Props> = ({
+    webmapId,
+    center,
+    zoom,
+    children,
+}: Props) => {
     const mapDivRef = useRef<HTMLDivElement>();
 
     const [mapView, setMapView] = useState<IMapView>(null);
@@ -30,6 +51,8 @@ const MapView: React.FC<Props> = ({ webmapId, children }: Props) => {
                         id: webmapId,
                     },
                 }),
+                center,
+                zoom,
             });
 
             view.when(() => {
@@ -59,7 +82,6 @@ const MapView: React.FC<Props> = ({ webmapId, children }: Props) => {
     };
 
     useEffect(() => {
-        loadCss();
         initMapView();
     }, []);
 
