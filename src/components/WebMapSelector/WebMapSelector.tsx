@@ -10,6 +10,9 @@ const WebMapOptions = [
     { name: 'Imagery', id: '86265e5a4bbb4187a59719cf134e0018' },
 ];
 
+/**
+ * Select a web map to be used in the Map View
+ */
 const WebMapSelector = () => {
     const dispatch = useDispatch();
 
@@ -18,16 +21,19 @@ const WebMapSelector = () => {
     return (
         <div className="absolute right-4 top-4 flex py-2 px-3 z-10 bg-slate-900 text-sm">
             {WebMapOptions.map(({ name, id }) => {
+                // if true, this web map is selected
+                const isSelected = id === webmapId;
+
                 return (
                     <div
                         key={id}
                         className={classNames(
                             'px-2 pb-1 cursor-pointer border-b-2',
                             {
-                                'border-blue-300': id === webmapId,
-                                'border-transparent': id !== webmapId,
-                                'text-white': id === webmapId,
-                                'text-gray-300': id !== webmapId,
+                                'border-blue-300': isSelected,
+                                'border-transparent': !isSelected,
+                                'text-white': isSelected,
+                                'text-gray-300': !isSelected,
                             }
                         )}
                         onClick={() => {
