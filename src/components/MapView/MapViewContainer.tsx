@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import MapView from './MapView';
-import { selectWebmapId } from '../../store/Map/selectors';
+import { selectWebmapId } from '@store/Map/selectors';
 
 const MapViewContainer = () => {
     const webmapId = useSelector(selectWebmapId);

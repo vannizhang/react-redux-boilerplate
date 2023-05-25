@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { ErrorBoundary } from '../../components';
-import MapViewContainer from '../../components/MapView/MapViewContainer';
-import WebMapSelector from '../../components/WebMapSelector/WebMapSelector';
+import { ErrorBoundary } from '@components/ErrorBoundary';
+import MapViewContainer from '@components/MapView/MapViewContainer';
+import WebMapSelector from '@components/WebMapSelector/WebMapSelector';
 
 const Demo = () => {
     return (
