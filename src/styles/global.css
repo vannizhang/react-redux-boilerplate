@@ -1,0 +1,5 @@
+.esri-attribution {
+    /* background-color: #000;
+    color: aliceblue; */
+    @apply bg-black text-white;
+}
