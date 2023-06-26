@@ -9,7 +9,7 @@ import {
 
 export type MapState = {
     // ArcGIS Online Webmap Item Id
-    webmapId?: string;
+    webmapId: string;
 };
 
 export const initialMapState: MapState = {
