@@ -44,9 +44,9 @@ module.exports =  (env, options)=> {
                 },
                 {
                     test: /\.css$/i,
-                    include: path.resolve(__dirname, 'src'),
+                    // include: path.resolve(__dirname, 'src'),
                     use: [
-                        MiniCssExtractPlugin.loader,
+                        devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
                         {
                             loader: "css-loader", 
                             options: {
@@ -128,18 +128,18 @@ module.exports =  (env, options)=> {
             // !devMode ? new BundleAnalyzerPlugin() : false
         ].filter(Boolean),
         optimization: {
-            splitChunks: {
-                cacheGroups: {
-                    // vendor chunk
-                    vendor: {
-                        // sync + async chunks
-                        chunks: 'all',
-                        name: 'vendor',
-                        // import file path containing node_modules
-                        test: /node_modules/
-                    }
-                }
-            },
+            // splitChunks: {
+            //     cacheGroups: {
+            //         // vendor chunk
+            //         vendor: {
+            //             // sync + async chunks
+            //             chunks: 'all',
+            //             name: 'vendor',
+            //             // import file path containing node_modules
+            //             test: /node_modules/
+            //         }
+            //     }
+            // },
             minimizer: [
                 new TerserPlugin({
                     extractComments: true,

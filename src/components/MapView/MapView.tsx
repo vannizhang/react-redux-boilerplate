@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
-
-import { loadModules, loadCss } from 'esri-loader';
-import IMapView from 'esri/views/MapView';
-import IWebMap from 'esri/WebMap';
+import MapView from '@arcgis/core/views/MapView';
+import WebMap from '@arcgis/core/WebMap';
 
 interface Props {
     /**
@@ -23,9 +21,7 @@ interface Props {
     children?: React.ReactNode;
 }
 
-loadCss();
-
-const MapView: React.FC<Props> = ({
+const ArcGISMapView: React.FC<Props> = ({
     webmapId,
     center,
     zoom,
@@ -33,52 +29,31 @@ const MapView: React.FC<Props> = ({
 }: Props) => {
     const mapDivRef = useRef<HTMLDivElement>();
 
-    const [mapView, setMapView] = useState<IMapView>(null);
+    const [mapView, setMapView] = useState<MapView>(null);
 
-    const initMapView = async () => {
-        type Modules = [typeof IMapView, typeof IWebMap];
-
-        try {
-            const [MapView, WebMap] = await (loadModules([
-                'esri/views/MapView',
-                'esri/WebMap',
-            ]) as Promise<Modules>);
-
-            const view = new MapView({
-                container: mapDivRef.current,
-                map: new WebMap({
-                    portalItem: {
-                        id: webmapId,
-                    },
-                }),
-                center,
-                zoom,
-            });
-
-            view.when(() => {
-                setMapView(view);
-            });
-        } catch (err) {
-            console.error(err);
-        }
-    };
-
-    const updateWebmapId = async () => {
-        type Modules = [typeof IWebMap];
-
-        try {
-            const [WebMap] = await (loadModules([
-                'esri/WebMap',
-            ]) as Promise<Modules>);
-
-            mapView.map = new WebMap({
+    const initMapView = () => {
+        const view = new MapView({
+            container: mapDivRef.current,
+            map: new WebMap({
                 portalItem: {
                     id: webmapId,
                 },
-            });
-        } catch (err) {
-            console.error(err);
-        }
+            }),
+            center,
+            zoom,
+        });
+
+        view.when(() => {
+            setMapView(view);
+        });
+    };
+
+    const updateWebmapId = () => {
+        mapView.map = new WebMap({
+            portalItem: {
+                id: webmapId,
+            },
+        });
     };
 
     useEffect(() => {
@@ -117,4 +92,4 @@ const MapView: React.FC<Props> = ({
     );
 };
 
-export default MapView;
+export default ArcGISMapView;
