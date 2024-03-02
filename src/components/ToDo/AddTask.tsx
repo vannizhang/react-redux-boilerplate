@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 export const AddTask = () => {
     const dispatch = useDispatch();
 
-    const [taskName, setTaskName] = useState<string>();
+    const [taskName, setTaskName] = useState<string>('');
 
     const handleSumbit = () => {
         if (!taskName) {

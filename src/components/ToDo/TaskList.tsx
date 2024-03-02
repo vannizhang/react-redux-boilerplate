@@ -26,7 +26,7 @@ export const TaskList = () => {
                             <input
                                 type="checkbox"
                                 checked={task.completed}
-                                onClick={() => {
+                                onChange={(e) => {
                                     dispatch(taskToggled(task.id));
                                 }}
                             />
