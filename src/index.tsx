@@ -1,4 +1,3 @@
-// import '@arcgis/core/assets/esri/themes/dark/main.css';
 import './styles/index.css';
 
 import React from 'react';
@@ -9,7 +8,7 @@ import configureAppStore, { getPreloadedState } from './store/configureStore';
 
 import AppContextProvider from './contexts/AppContextProvider';
 
-import HomePage from './pages/Home/Home';
+import { ToDoList } from '@components/ToDo/ToDoList';
 
 (async () => {
     const preloadedState = getPreloadedState();
@@ -20,7 +19,7 @@ import HomePage from './pages/Home/Home';
         <React.StrictMode>
             <ReduxProvider store={configureAppStore(preloadedState)}>
                 <AppContextProvider>
-                    <HomePage />
+                    <ToDoList />
                 </AppContextProvider>
             </ReduxProvider>
         </React.StrictMode>
