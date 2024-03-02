@@ -30,9 +30,6 @@ A popular linter for JavaScript that helps identify and fix syntax errors, codin
 ### Prettier
 An opinionated code formatter that helps ensure code consistency and readability across teams. It supports a wide range of languages and integrates with many popular text editors and build tools.
 
-### @arcgis/core
-A minified, unbuilt version of the ArcGIS Maps SDK for JavaScript ES modules.
-
 ## Getting Started
 Before you start, make sure you have a fresh version of [Node.js](https://nodejs.org/en/) and NPM installed. The current Long Term Support (LTS) release is an ideal starting point.
 
