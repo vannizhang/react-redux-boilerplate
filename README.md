@@ -77,7 +77,7 @@ Before you start, make sure you have a fresh version of [Node.js](https://nodejs
     ├── services                # API calls
     ├── static                  # static assets
     ├── store                   # Redux store
-        ├── Map                 # contains reducer, selectors and thunks for Map "slice" of the redux store
+        ├── ToDo                # contains reducer, selectors and thunks for ToDo "slice" of the redux store
         ├── configureStore.ts   # configure the app's redux store
         ├── getPreloadedState.ts 
         ├── rootReducers.ts     # combine reducers from all slices
