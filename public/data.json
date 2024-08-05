@@ -1,0 +1,1118 @@
+{
+    "results": [
+        {
+            "hits": [
+                {
+                    "name": "Amazon - Fire TV Stick with Alexa Voice Remote - Black",
+                    "description": "Enjoy smart access to videos, games and apps with this Amazon Fire TV stick. Its Alexa voice remote lets you deliver hands-free commands when you want to watch television or engage with other applications. With a quad-core processor, 1GB internal memory and 8GB of storage, this portable Amazon Fire TV stick works fast for buffer-free streaming.",
+                    "categories": [
+                        "TV & Home Theater",
+                        "Streaming Media Players"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": [
+                            "TV & Home Theater",
+                            "TV & Home Theater"
+                        ],
+                        "lvl1": [
+                            "TV & Home Theater > Streaming Media Players",
+                            "helloworld"
+                        ]
+                    },
+                    "type": "Streaming media plyr",
+                    "price": 39.99,
+                    "price_range": "1 - 50",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/5477500_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/5477500/pdp",
+                    "free_shipping": false,
+                    "popularity": 21469,
+                    "rating": 4,
+                    "objectID": "5477500",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Enjoy smart access to videos, games and apps with this …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Amazon - Fire TV Stick with Alexa Voice Remote - Black",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Enjoy smart access to videos, games and apps with this Amazon Fire TV stick. Its Alexa voice remote lets you deliver hands-free commands when you want to watch television or engage with other applications. With a quad-core processor, 1GB internal memory and 8GB of storage, this portable Amazon Fire TV stick works fast for buffer-free streaming.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "TV & Home Theater",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Streaming Media Players",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Google - Chromecast - Black",
+                    "description": "Google Chromecast: Enjoy a world of entertainment with Google Chromecast. Just connect to your HDTV's HDMI interface and your home Wi-Fi network to get started. You can stream your favorite apps from your compatible phone, tablet or laptop, plus use your phone as a remote to search, play and pause content.",
+                    "brand": "Google",
+                    "categories": [
+                        "TV & Home Theater",
+                        "Streaming Media Players"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "TV & Home Theater",
+                        "lvl1": "TV & Home Theater > Streaming Media Players"
+                    },
+                    "type": "Streaming media plyr",
+                    "price": 35.0,
+                    "price_range": "1 - 50",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/4397400_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/4397400/pdp",
+                    "free_shipping": false,
+                    "rating": 4,
+                    "popularity": 21468,
+                    "objectID": "4397400",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Google Chromecast: Enjoy a world of entertainment with Google Chromecast …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Google - Chromecast - Black",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Google Chromecast: Enjoy a world of entertainment with Google Chromecast. Just connect to your HDTV's HDMI interface and your home Wi-Fi network to get started. You can stream your favorite apps from your compatible phone, tablet or laptop, plus use your phone as a remote to search, play and pause content.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Google",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "TV & Home Theater",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Streaming Media Players",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Dell - Inspiron 15.6\" Touch-Screen Laptop - Intel Core i5 - 6GB Memory - 1TB Hard Drive - Black",
+                    "description": "Dell Inspiron Laptop: Get speed and performance from this 15.6-inch Dell Inspiron laptop. Supported by an Intel Core i5-5200U processor and 6GB of DDR3L RAM, this slim touch screen laptop lets you run multiple applications without lag. The 1TB hard drive in this Dell Inspiron laptop lets you store multiple music, video and document files.",
+                    "brand": "Dell",
+                    "categories": [
+                        "Computers & Tablets",
+                        "Laptops"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "Computers & Tablets",
+                        "lvl1": "Computers & Tablets > Laptops"
+                    },
+                    "type": "Burst skus",
+                    "price": 499.99,
+                    "price_range": "200 - 500",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/5588602_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/5588602/pdp",
+                    "free_shipping": true,
+                    "rating": 4,
+                    "popularity": 21467,
+                    "objectID": "5588602",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Dell Inspiron Laptop: Get speed and performance from this 15 …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Dell - Inspiron 15.6\" Touch-Screen Laptop - Intel Core i5 - 6GB Memory - 1TB Hard Drive - Black",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Dell Inspiron Laptop: Get speed and performance from this 15.6-inch Dell Inspiron laptop. Supported by an Intel Core i5-5200U processor and 6GB of DDR3L RAM, this slim touch screen laptop lets you run multiple applications without lag. The 1TB hard drive in this Dell Inspiron laptop lets you store multiple music, video and document files.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Dell",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "Computers & Tablets",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Laptops",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Amazon - Echo Dot",
+                    "description": "Deliver your favorite playlist anywhere in your home with the Amazon Echo Dot voice-controlled device. Control most electric devices through voice activation, or schedule a ride with Uber and order a pizza. The Amazon Echo Dot voice-controlled device turns any home into a smart home with the Alexa app on a smartphone or tablet.",
+                    "brand": "Amazon",
+                    "categories": [
+                        "Smart Home"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "Smart Home"
+                    },
+                    "type": "Voice assistants",
+                    "price": 49.99,
+                    "price_range": "1 - 50",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/5578851_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/5578851/pdp",
+                    "free_shipping": true,
+                    "rating": 4,
+                    "popularity": 21466,
+                    "objectID": "5578851",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Deliver your favorite playlist anywhere in your home with the …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Amazon - Echo Dot",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Deliver your favorite playlist anywhere in your home with the Amazon Echo Dot voice-controlled device. Control most electric devices through voice activation, or schedule a ride with Uber and order a pizza. The Amazon Echo Dot voice-controlled device turns any home into a smart home with the Alexa app on a smartphone or tablet.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Amazon",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "Smart Home",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Apple - MacBook Air® (Latest Model) - 13.3\" Display - Intel Core i5 - 8GB Memory - 128GB Flash Storage - Silver",
+                    "description": "MacBook Air features up to 8GB of memory, a fifth-generation Intel Core processor, Thunderbolt 2, great built-in apps, and all-day battery life.1 Its thin, light, and durable enough to take everywhere you go-and powerful enough to do everything once you get there, better.",
+                    "brand": "Apple",
+                    "categories": [
+                        "Computers & Tablets",
+                        "Laptops",
+                        "All Laptops",
+                        "MacBooks"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "Computers & Tablets",
+                        "lvl1": "Computers & Tablets > Laptops",
+                        "lvl2": "Computers & Tablets > Laptops > All Laptops",
+                        "lvl3": "Computers & Tablets > Laptops > All Laptops > MacBooks"
+                    },
+                    "type": "Apple",
+                    "price": 999.99,
+                    "price_range": "500 - 2000",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/6443034_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/6443034/pdp",
+                    "free_shipping": true,
+                    "rating": 4,
+                    "popularity": 21465,
+                    "_geoloc": {
+                        "lat": 40.748817,
+                        "lng": -73.985428
+                    },
+                    "objectID": "6443034",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "MacBook Air features up to 8GB of memory, a fifth …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Apple - MacBook Air® (Latest Model) - 13.3\" Display - Intel Core i5 - 8GB Memory - 128GB Flash Storage - Silver",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "MacBook Air features up to 8GB of memory, a fifth-generation Intel Core processor, Thunderbolt 2, great built-in apps, and all-day battery life.1 Its thin, light, and durable enough to take everywhere you go-and powerful enough to do everything once you get there, better.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Apple",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "Computers & Tablets",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Laptops",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "All Laptops",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "MacBooks",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Sharp - 50\" Class (49.5\" Diag.) - LED - 1080p - Smart - HDTV Roku TV - Black",
+                    "description": "Only at Best Buy  Sharp LC-50LB481U LED Roku TV: Get a TV that enjoys full Internet connectivity with this Sharp 49.5-inch smart TV. Full HD resolutions give you plenty of detail whether you're streaming content from the Internet using the integrated Roku player or watching via cable. Plenty of contrast and high-quality sound mean this Sharp 49.5-in smart TV delivers outstanding video.",
+                    "brand": "Sharp",
+                    "categories": [
+                        "TV & Home Theater",
+                        "TVs",
+                        "All Flat-Panel TVs"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "TV & Home Theater",
+                        "lvl1": "TV & Home Theater > TVs",
+                        "lvl2": "TV & Home Theater > TVs > All Flat-Panel TVs"
+                    },
+                    "type": "45\"-50\"  tv's",
+                    "price": 429.99,
+                    "price_range": "200 - 500",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/4863102_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/4863102/pdp",
+                    "free_shipping": false,
+                    "rating": 4,
+                    "popularity": 21464,
+                    "objectID": "4863102",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Only at Best Buy  Sharp LC-50LB481U LED Roku TV …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Sharp - 50\" Class (49.5\" Diag.) - LED - 1080p - Smart - HDTV Roku TV - Black",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Only at Best Buy  Sharp LC-50LB481U LED Roku TV: Get a TV that enjoys full Internet connectivity with this Sharp 49.5-inch smart TV. Full HD resolutions give you plenty of detail whether you're streaming content from the Internet using the integrated Roku player or watching via cable. Plenty of contrast and high-quality sound mean this Sharp 49.5-in smart TV delivers outstanding video.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Sharp",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "TV & Home Theater",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "TVs",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "All Flat-Panel TVs",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Google - Google Home - White/Slate fabric",
+                    "description": "Simplify your everyday life with the Google Home, a voice-activated speaker powered by the Google Assistant. Use voice commands to enjoy music, get answers from Google and manage everyday tasks. Google Home is compatible with Android and iOS operating systems, and can control compatible smart devices such as Chromecast or Nest.",
+                    "brand": "Google",
+                    "categories": [
+                        "Smart Home"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "Smart Home"
+                    },
+                    "type": "Voice assistants",
+                    "price": 129.0,
+                    "price_range": "100 - 200",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/5578849_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/5578849/pdp",
+                    "free_shipping": true,
+                    "rating": 4,
+                    "popularity": 21463,
+                    "objectID": "5578849",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Simplify your everyday life with the Google Home, a voice …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Google - Google Home - White/Slate fabric",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Simplify your everyday life with the Google Home, a voice-activated speaker powered by the Google Assistant. Use voice commands to enjoy music, get answers from Google and manage everyday tasks. Google Home is compatible with Android and iOS operating systems, and can control compatible smart devices such as Chromecast or Nest.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Google",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "Smart Home",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Apple - EarPods™ with Remote and Mic - White",
+                    "description": "Control media playback, adjust the volume and answer and end calls on your Apple&#174; iPod&#174;, iPhone&#174; or iPad&#174; with these Apple EarPods&#8482; MD827LL/A, which feature an in-line remote and mic for ease of use.",
+                    "brand": "Apple",
+                    "categories": [
+                        "Audio",
+                        "Headphones",
+                        "All Headphones"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "Audio",
+                        "lvl1": "Audio > Headphones",
+                        "lvl2": "Audio > Headphones > All Headphones"
+                    },
+                    "type": "Earbud headphones",
+                    "price": 29.99,
+                    "price_range": "1 - 50",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/6848136_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/6848136/pdp",
+                    "free_shipping": true,
+                    "rating": 4,
+                    "popularity": 21462,
+                    "objectID": "6848136",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Control media playback, adjust the volume and answer and end …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Apple - EarPods™ with Remote and Mic - White",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Control media playback, adjust the volume and answer and end calls on your Apple® iPod®, iPhone® or iPad® with these Apple EarPods™ MD827LL/A, which feature an in-line remote and mic for ease of use.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Apple",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "Audio",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Headphones",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "All Headphones",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Philips - hue A19 Smart LED Light Bulb - White Only",
+                    "description": "Philips hue A19 Smart LED Light Bulb: Get lighting that's as smart as you are. You can easily dim this light bulb and set timers and alarms using your smartphone or tablet. Plus, LED technology offers lasting illumination while using minimal energy.",
+                    "brand": "Philips",
+                    "categories": [
+                        "Smart Home",
+                        "Smart Lighting",
+                        "Smart Light Bulbs"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "Smart Home",
+                        "lvl1": "Smart Home > Smart Lighting",
+                        "lvl2": "Smart Home > Smart Lighting > Smart Light Bulbs"
+                    },
+                    "type": "Smart lighting",
+                    "price": 14.99,
+                    "price_range": "1 - 50",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/4374300_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/4374300/pdp",
+                    "free_shipping": false,
+                    "rating": 4,
+                    "popularity": 21461,
+                    "objectID": "4374300",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Philips hue A19 Smart LED Light Bulb: Get lighting that …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Philips - hue A19 Smart LED Light Bulb - White Only",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Philips hue A19 Smart LED Light Bulb: Get lighting that's as smart as you are. You can easily dim this light bulb and set timers and alarms using your smartphone or tablet. Plus, LED technology offers lasting illumination while using minimal energy.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Philips",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "Smart Home",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Smart Lighting",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Smart Light Bulbs",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Zelda)",
+                    "description": "Zelda appears here carrying a Sheikah Slate, an important item in the Legend Zelda&#8482;: Breath of the Wild game. While her fate remains shrouded in mystery, the princess is at the core of Link's adventure in Hyrule.",
+                    "brand": "Nintendo",
+                    "categories": [
+                        "Video Games",
+                        "Toys to Life",
+                        "Amiibo"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "Video Games",
+                        "lvl1": "Video Games > Toys to Life",
+                        "lvl2": "Video Games > Toys to Life > Amiibo"
+                    },
+                    "type": "Toy 2 life character",
+                    "price": 15.99,
+                    "price_range": "1 - 50",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/5723538_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/5723538/pdp",
+                    "free_shipping": false,
+                    "rating": 0,
+                    "popularity": 21460,
+                    "objectID": "5723538",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Zelda appears here carrying a Sheikah Slate, an important item …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Zelda)",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Zelda appears here carrying a Sheikah Slate, an important item in the Legend Zelda™: Breath of the Wild game. While her fate remains shrouded in mystery, the princess is at the core of Link's adventure in Hyrule.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Nintendo",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "Video Games",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Toys to Life",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Amiibo",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Link (Archer))",
+                    "description": "Link&#8482; is the main character in The Legend of Zelda&#8482; games. A young boy living in Hyrule, Link is often given the task of rescuing Princess Zelda&#8482; and Hyrule from the Gerudo thief Ganondorf. Humble to the end, Link is known not merely as a hero but as a symbol of courage, strength and wisdom as well.",
+                    "brand": "Nintendo",
+                    "categories": [
+                        "Video Games",
+                        "Toys to Life",
+                        "Amiibo"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "Video Games",
+                        "lvl1": "Video Games > Toys to Life",
+                        "lvl2": "Video Games > Toys to Life > Amiibo"
+                    },
+                    "type": "Toy 2 life character",
+                    "price": 15.99,
+                    "price_range": "1 - 50",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/5723537_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/5723537/pdp",
+                    "free_shipping": false,
+                    "rating": 0,
+                    "popularity": 21459,
+                    "objectID": "5723537",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Link™ is the main character in The Legend of …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Link (Archer))",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Link™ is the main character in The Legend of Zelda™ games. A young boy living in Hyrule, Link is often given the task of rescuing Princess Zelda™ and Hyrule from the Gerudo thief Ganondorf. Humble to the end, Link is known not merely as a hero but as a symbol of courage, strength and wisdom as well.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Nintendo",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "Video Games",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Toys to Life",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Amiibo",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Roku - Express Streaming Media Player - Black",
+                    "description": "Watch your favorite programs with this Roku Express streaming player. The wireless capability lets you connect to your home network to stream movies and television shows without the need for expensive cable subscriptions, while the included remote lets you control the device from anywhere within range. This Roku Express streaming player turns every TV into a smart TV.",
+                    "brand": "Roku",
+                    "categories": [
+                        "TV & Home Theater",
+                        "Streaming Media Players"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "TV & Home Theater",
+                        "lvl1": "TV & Home Theater > Streaming Media Players"
+                    },
+                    "type": "Streaming media plyr",
+                    "price": 29.99,
+                    "price_range": "1 - 50",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/5513500_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/5513500/pdp",
+                    "free_shipping": true,
+                    "rating": 4,
+                    "popularity": 21458,
+                    "objectID": "5513500",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Watch your favorite programs with this Roku Express streaming player …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Roku - Express Streaming Media Player - Black",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Watch your favorite programs with this Roku Express streaming player. The wireless capability lets you connect to your home network to stream movies and television shows without the need for expensive cable subscriptions, while the included remote lets you control the device from anywhere within range. This Roku Express streaming player turns every TV into a smart TV.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Roku",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "TV & Home Theater",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Streaming Media Players",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Link (Rider))",
+                    "description": "Link&#8482; is the main character in The Legend of Zelda&#8482; games. A young boy living in Hyrule, Link is often given the task of rescuing Princess Zelda&#8482; and Hyrule from the Gerudo thief Ganondorf. Humble to the end, Link is known not merely as a hero but as a symbol of courage, strength and wisdom as well.",
+                    "brand": "Nintendo",
+                    "categories": [
+                        "Video Games",
+                        "Toys to Life",
+                        "Amiibo"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "Video Games",
+                        "lvl1": "Video Games > Toys to Life",
+                        "lvl2": "Video Games > Toys to Life > Amiibo"
+                    },
+                    "type": "Toy 2 life character",
+                    "price": 15.99,
+                    "price_range": "1 - 50",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/5723529_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/5723529/pdp",
+                    "free_shipping": false,
+                    "rating": 0,
+                    "popularity": 21457,
+                    "objectID": "5723529",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Link™ is the main character in The Legend of …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Link (Rider))",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Link™ is the main character in The Legend of Zelda™ games. A young boy living in Hyrule, Link is often given the task of rescuing Princess Zelda™ and Hyrule from the Gerudo thief Ganondorf. Humble to the end, Link is known not merely as a hero but as a symbol of courage, strength and wisdom as well.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Nintendo",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "Video Games",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Toys to Life",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Amiibo",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Guardian)",
+                    "description": "Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series.",
+                    "brand": "Nintendo",
+                    "categories": [
+                        "Video Games",
+                        "Toys to Life",
+                        "Amiibo"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "Video Games",
+                        "lvl1": "Video Games > Toys to Life",
+                        "lvl2": "Video Games > Toys to Life > Amiibo"
+                    },
+                    "type": "Toy 2 life character",
+                    "price": 19.99,
+                    "price_range": "1 - 50",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/5723700_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/5723700/pdp",
+                    "free_shipping": false,
+                    "rating": 0,
+                    "popularity": 21455,
+                    "objectID": "5723700",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Forget everything you know about The Legend of Zelda games …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Nintendo - amiibo Figure (The Legend of Zelda: Breath of the Wild Series Guardian)",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Nintendo",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "Video Games",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Toys to Life",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Amiibo",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "LG - Ultra Slim 8x Max. DVD Write Speed External USB DVD±RW/CD-RW Drive - Black",
+                    "description": "Create archives of your favorite media with ease using this LG Ultra Slim SP80NB60 external DVD&#177;RW/CD-RW Drive, which offers up to 8x DVD&#177;R write speeds. Jamless play skips damaged parts of the disc to ensure smooth, uninterrupted playback.",
+                    "brand": "LG",
+                    "categories": [
+                        "Computers & Tablets",
+                        "Optical Drives",
+                        "External DVD Drives"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "Computers & Tablets",
+                        "lvl1": "Computers & Tablets > Optical Drives",
+                        "lvl2": "Computers & Tablets > Optical Drives > External DVD Drives"
+                    },
+                    "type": "External",
+                    "price": 39.99,
+                    "price_range": "1 - 50",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/5407064_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/5407064/pdp",
+                    "free_shipping": false,
+                    "rating": 4,
+                    "popularity": 21454,
+                    "objectID": "5407064",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Create archives of your favorite media with ease using this …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "LG - Ultra Slim 8x Max. DVD Write Speed External USB DVD±RW/CD-RW Drive - Black",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Create archives of your favorite media with ease using this LG Ultra Slim SP80NB60 external DVD±RW/CD-RW Drive, which offers up to 8x DVD±R write speeds. Jamless play skips damaged parts of the disc to ensure smooth, uninterrupted playback.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "LG",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "Computers & Tablets",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Optical Drives",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "External DVD Drives",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Sony - BDP-S3700 - Streaming Wi-Fi Built-In Blu-ray Player - Black",
+                    "description": "Enjoy fast, high-definition media streaming with this Sony Blu-ray disk player optimized with built-in Wi-Fi for smooth video performance. Use your mobile device to remotely control the player, and view the convenient side-bar app for program information. Brilliant color and high-quality details add to watching enjoyment with this Sony Blu-ray disk player.",
+                    "brand": "Sony",
+                    "categories": [
+                        "TV & Home Theater",
+                        "Streaming Media Players"
+                    ],
+                    "hierarchicalCategories": {
+                        "lvl0": "TV & Home Theater",
+                        "lvl1": "TV & Home Theater > Streaming Media Players"
+                    },
+                    "type": "Blu-ray",
+                    "price": 89.99,
+                    "price_range": "50 - 100",
+                    "image": "https://cdn-demo.algolia.com/bestbuy-0118/4743301_sb.jpg",
+                    "url": "https://api.bestbuy.com/click/-/4743301/pdp",
+                    "free_shipping": true,
+                    "rating": 4,
+                    "popularity": 21453,
+                    "objectID": "4743301",
+                    "_snippetResult": {
+                        "description": {
+                            "value": "Enjoy fast, high-definition media streaming with this Sony Blu …",
+                            "matchLevel": "none"
+                        }
+                    },
+                    "_highlightResult": {
+                        "name": {
+                            "value": "Sony - BDP-S3700 - Streaming Wi-Fi Built-In Blu-ray Player - Black",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "description": {
+                            "value": "Enjoy fast, high-definition media streaming with this Sony Blu-ray disk player optimized with built-in Wi-Fi for smooth video performance. Use your mobile device to remotely control the player, and view the convenient side-bar app for program information. Brilliant color and high-quality details add to watching enjoyment with this Sony Blu-ray disk player.",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "brand": {
+                            "value": "Sony",
+                            "matchLevel": "none",
+                            "matchedWords": []
+                        },
+                        "categories": [
+                            {
+                                "value": "TV & Home Theater",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            {
+                                "value": "Streaming Media Players",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        ]
+                    }
+                }
+            ],
+            "nbHits": 21468,
+            "page": 0,
+            "nbPages": 63,
+            "hitsPerPage": 16,
+            "facets": {
+                "brand": {
+                    "Insignia™": 746,
+                    "Samsung": 633,
+                    "Metra": 591,
+                    "HP": 530,
+                    "Apple": 442,
+                    "GE": 394,
+                    "Sony": 350,
+                    "Incipio": 320,
+                    "KitchenAid": 318,
+                    "Whirlpool": 298
+                },
+                "price": {
+                    "39.99": 1163,
+                    "49.99": 1083,
+                    "19.99": 1023,
+                    "29.99": 896,
+                    "99.99": 766,
+                    "24.99": 635,
+                    "59.99": 629,
+                    "14.99": 519,
+                    "79.99": 496,
+                    "34.99": 487
+                },
+                "rating": {
+                    "4": 13924,
+                    "0": 3422,
+                    "5": 2150,
+                    "3": 1622,
+                    "2": 194,
+                    "1": 156
+                },
+                "free_shipping": {
+                    "true": 18011,
+                    "false": 3457
+                },
+                "hierarchicalCategories.lvl0": {
+                    "Appliances": 4306,
+                    "Computers & Tablets": 3563,
+                    "Cell Phones": 3291,
+                    "Audio": 1570,
+                    "Cameras & Camcorders": 1369,
+                    "Car Electronics & GPS": 1208,
+                    "TV & Home Theater": 1200,
+                    "Health, Fitness & Beauty": 923,
+                    "Office & School Supplies": 617,
+                    "Video Games": 505
+                }
+            },
+            "facets_stats": {
+                "price": {
+                    "min": 1,
+                    "max": 4999.99,
+                    "avg": 242.813,
+                    "sum": 5.21271e+06
+                },
+                "rating": {
+                    "min": 0,
+                    "max": 5,
+                    "avg": 3,
+                    "sum": 71856
+                }
+            },
+            "exhaustiveFacetsCount": true,
+            "exhaustiveNbHits": true,
+            "exhaustiveTypo": true,
+            "exhaustive": {
+                "facetsCount": true,
+                "nbHits": true,
+                "typo": true
+            },
+            "query": "",
+            "params": "attributesToSnippet=%5B%22description%3A10%22%5D&clickAnalytics=true&facets=%5B%22brand%22%2C%22free_shipping%22%2C%22hierarchicalCategories.lvl0%22%2C%22price%22%2C%22rating%22%5D&highlightPostTag=__%2Fais-highlight__&highlightPreTag=__ais-highlight__&hitsPerPage=16&maxValuesPerFacet=10&page=0&query=&removeWordsIfNoResults=allOptional&snippetEllipsisText=%E2%80%A6",
+            "index": "instant_search",
+            "queryID": "42e3bc2a4b3bb1794c2217cbb047e137",
+            "renderingContent": {
+                "facetOrdering": {
+                    "facets": {
+                        "order": [
+                            "brand",
+                            "hierarchicalCategories.lvl0",
+                            "categories",
+                            "price",
+                            "free_shipping",
+                            "rating",
+                            "type"
+                        ]
+                    },
+                    "values": {
+                        "brand": {
+                            "order": [
+                                "Apple"
+                            ],
+                            "sortRemainingBy": "count"
+                        },
+                        "categories": {
+                            "sortRemainingBy": "count"
+                        },
+                        "free_shipping": {
+                            "sortRemainingBy": "count"
+                        },
+                        "hierarchicalCategories.lvl0": {
+                            "sortRemainingBy": "alpha"
+                        },
+                        "price": {
+                            "sortRemainingBy": "count"
+                        },
+                        "rating": {
+                            "sortRemainingBy": "count"
+                        },
+                        "type": {
+                            "sortRemainingBy": "count"
+                        }
+                    }
+                }
+            },
+            "extensions": {
+                "queryCategorization": {}
+            },
+            "processingTimeMS": 3,
+            "processingTimingsMS": {
+                "_request": {
+                    "roundTrip": 33
+                },
+                "afterFetch": {
+                    "format": {
+                        "total": 1
+                    }
+                },
+                "extensions": 2,
+                "total": 3
+            },
+            "serverTimeMS": 5
+        }
+    ]
+}

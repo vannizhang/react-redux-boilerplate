@@ -1,11 +1,11 @@
 import React from 'react';
 import { ErrorBoundary } from '@components/ErrorBoundary';
+import Header from '@components/Header/Header';
 
 const Home = () => {
     return (
         <ErrorBoundary>
-            <h1>React Redux Boilerplate</h1>
-            <p>You can put the components of your app here</p>
+            <Header/>
         </ErrorBoundary>
     );
 };

@@ -5,7 +5,11 @@ module.exports = {
   ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'search-icon': 'rgb(226, 164, 0)',
+      },
+    },
   },
   variants: {
     extend: {},

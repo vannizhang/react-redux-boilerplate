@@ -52,7 +52,7 @@
     "autoprefixer": "^10.2.6",
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^9.0.0",
-    "css-loader": "^5.2.6",
+    "css-loader": "^5.2.7",
     "css-minimizer-webpack-plugin": "^3.0.1",
     "eslint": "8.54",
     "eslint-config-prettier": "^8.5.0",
@@ -77,7 +77,7 @@
     "terser-webpack-plugin": "^5.1.3",
     "typescript": "^5.3.2",
     "url-loader": "^4.1.1",
-    "webpack": "^5.89.0",
+    "webpack": "^5.93.0",
     "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "4.10",
     "webpack-dev-server": "^4.9.3"
@@ -90,6 +90,7 @@
     "helper-toolkit-ts": "^1.1.13",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-icons": "^5.2.1",
     "react-redux": "^8.0.2",
     "redux": "^4.1.0"
   },
