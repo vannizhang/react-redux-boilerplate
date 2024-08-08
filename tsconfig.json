@@ -11,7 +11,7 @@
         "target": "es5",
         "resolveJsonModule": true,
         "esModuleInterop": true ,
-        "suppressImplicitAnyIndexErrors": true,
+        // "suppressImplicitAnyIndexErrors": true,
         "typeRoots": [  
             "./src/types", 
             "./node_modules/@types"
