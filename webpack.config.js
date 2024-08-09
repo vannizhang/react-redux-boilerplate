@@ -58,19 +58,27 @@ module.exports =  (env, options)=> {
                         }
                     ],
                 },
-                { 
-                    test: /\.(woff|woff2|ttf|eot)$/,  
-                    loader: "file-loader",
-                    options: {
-                        name: '[name].[contenthash].[ext]',
-                    }
+                // { 
+                //     test: /\.(woff|woff2|ttf|eot)$/,  
+                //     loader: "file-loader",
+                //     options: {
+                //         name: '[name].[contenthash].[ext]',
+                //     }
+                // },
+                {
+                    test: /\.(woff|woff2|ttf|eot)$/,
+                    type: 'asset/resource',
                 },
-                { 
-                    test: /\.(png|jpg|gif|svg)$/,  
-                    loader: "file-loader",
-                    options: {
-                        name: '[name].[contenthash].[ext]',
-                    }
+                // { 
+                //     test: /\.(png|jpg|gif|svg)$/,  
+                //     loader: "file-loader",
+                //     options: {
+                //         name: '[name].[contenthash].[ext]',
+                //     }
+                // },
+                {
+                    test: /\.(png|jpg|gif|svg)$/,
+                    type: 'asset/resource',
                 },
             ]
         },

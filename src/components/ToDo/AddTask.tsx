@@ -1,6 +1,7 @@
 import { taskAdded } from '@store/ToDo/reducer';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import TaskListIcon from './assets/list-check-32.svg';
 
 export const AddTask = () => {
     const dispatch = useDispatch();
@@ -31,10 +32,11 @@ export const AddTask = () => {
 
     return (
         <div className="mt-8 mb-2 flex items-center">
-            <div>
+            <img className=" w-6 h-6" src={TaskListIcon} />
+            <div className="flex-grow ml-2">
                 <input
-                    className="block bg-white border border-slate-300 rounded-md py-1 px-2 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
-                    placeholder="Name of the New Task"
+                    className="block bg-white border border-slate-300 rounded-md py-1 px-2 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm w-full"
+                    placeholder="Enter the name of New Task"
                     type="text"
                     name="new task"
                     value={taskName}

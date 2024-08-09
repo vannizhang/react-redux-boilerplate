@@ -1,5 +1,8 @@
 import { taskToggled } from '@store/ToDo/reducer';
-import { selectAllTasks } from '@store/ToDo/selectors';
+import {
+    selectAllTasks,
+    selectCountOfCompletedTasks,
+} from '@store/ToDo/selectors';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
@@ -9,13 +12,25 @@ export const TaskList = () => {
 
     const tasks = useSelector(selectAllTasks);
 
+    const countOfCompletedTasks = useSelector(selectCountOfCompletedTasks);
+
     if (!tasks.length) {
-        return <p>No tasks</p>;
+        return (
+            <div className=" text-center mt-4">
+                <p>You do not have any task in your list.</p>
+            </div>
+        );
     }
 
     return (
         <div>
-            <h3>Your Tasks: </h3>
+            <div className="mb-2">
+                <p>
+                    {countOfCompletedTasks} out of {tasks.length} tasks are
+                    completed
+                </p>
+            </div>
+
             {tasks.map((task) => {
                 return (
                     <div
