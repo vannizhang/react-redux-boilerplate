@@ -1,12 +1,12 @@
 const path = require('path');
-const package = require('./package.json');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const metaConfig = require('./meta.config.js');
 
 module.exports =  (env, options)=> {
 
@@ -105,18 +105,8 @@ module.exports =  (env, options)=> {
             new HtmlWebpackPlugin({
                 template: './public/index.html',
                 filename: 'index.html',
-                title: package.name,
-                meta: {
-                    title: package.name,
-                    description: package.description,
-                    author: package.author,
-                    keywords: Array.isArray(package.keywords) 
-                        ? package.keywords.join(',') 
-                        : undefined,
-                    'og:title': package.name,
-                    'og:description': package.description,
-                    'og:url': package.homepage,
-                },
+                title: metaConfig.title,
+                meta: metaConfig.meta,
                 minify: {
                     html5                          : true,
                     collapseWhitespace             : true,
@@ -133,7 +123,7 @@ module.exports =  (env, options)=> {
                 }
             }),
             // !devMode ? new CleanWebpackPlugin() : false,
-            // !devMode ? new BundleAnalyzerPlugin() : false
+            !devMode ? new BundleAnalyzerPlugin() : false
         ].filter(Boolean),
         optimization: {
             // splitChunks: {
