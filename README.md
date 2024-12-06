@@ -92,6 +92,7 @@ Before you start, make sure you have a fresh version of [Node.js](https://nodejs
 ├── webpack.config.js           # Webpack configurations
 ├── tailwind.config.js          # Tailwind CSS configurations
 ├── postcss.config.js           # PostCSS configurations
+├── meta.config.js              # meta tags configuration
 ```
 
 ## Issues
