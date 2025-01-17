@@ -40,7 +40,6 @@
     "@testing-library/user-event": "^14.5.2",
     "@types/classnames": "^2.2.10",
     "@types/jest": "^29.5.11",
-    "@types/react-redux": "^7.1.16",
     "@types/react-responsive": "^8.0.2",
     "@types/redux-mock-store": "^1.0.3",
     "@typescript-eslint/eslint-plugin": "6.12",
@@ -77,15 +76,16 @@
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "1.8",
+    "@reduxjs/toolkit": "2.5",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
+    "@types/react-redux": "^7.1.34",
     "classnames": "^2.2.6",
     "helper-toolkit-ts": "^1.1.13",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-redux": "^8.0.2",
-    "redux": "^4.1.0"
+    "react-redux": "^9.2.0",
+    "redux": "^5.0.1"
   },
   "browserslist": [
     "defaults"
