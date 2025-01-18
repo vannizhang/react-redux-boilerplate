@@ -4,15 +4,14 @@ import {
     selectCountOfCompletedTasks,
 } from '@store/ToDo/selectors';
 import React from 'react';
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
+import { useAppDispatch, useAppSelector } from '@store/configureStore';
 
 export const TaskList = () => {
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
 
-    const tasks = useSelector(selectAllTasks);
+    const tasks = useAppSelector(selectAllTasks);
 
-    const countOfCompletedTasks = useSelector(selectCountOfCompletedTasks);
+    const countOfCompletedTasks = useAppSelector(selectCountOfCompletedTasks);
 
     if (!tasks.length) {
         return (

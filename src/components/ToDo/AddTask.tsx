@@ -1,10 +1,10 @@
 import { taskAdded } from '@store/ToDo/reducer';
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import TaskListIcon from './assets/list-check-32.svg';
+import { useAppDispatch } from '@store/configureStore';
 
 export const AddTask = () => {
-    const dispatch = useDispatch();
+    const dispatch = useAppDispatch();
 
     const [taskName, setTaskName] = useState<string>('');
 
