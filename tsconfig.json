@@ -15,7 +15,7 @@
         "moduleResolution": "Bundler",
         "esModuleInterop": true,
         "noImplicitAny": true,
-        "preserveConstEnums": true,
+        // "preserveConstEnums": true,
         "removeComments": true,
         "sourceMap": false,
         "typeRoots": [  
